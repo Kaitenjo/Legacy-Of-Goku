@@ -1,0 +1,16 @@
+# Godot 4 - file generati automaticamente
+.godot/
+
+# File temporanei
+*.tmp
+
+# UID files (generati automaticamente da Godot 4)
+*.uid
+
+# Export
+export/
+
+# File di sistema
+.DS_Store
+Thumbs.db
+desktop.ini

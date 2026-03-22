@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://dvsbcou1r1iy2"]
+
+[ext_resource type="Script" uid="uid://crhhrj8kappi6" path="res://scripts/player/states/actualStates/walk.gd" id="1"]
+[ext_resource type="Script" uid="uid://yqonheq8p7o5" path="res://scripts/player/states/actualStates/idle.gd" id="2"]
+[ext_resource type="Script" uid="uid://bf83uolr34s6v" path="res://scripts/player/states/state-manager.gd" id="3"]
+[ext_resource type="Script" uid="uid://deu8grlsof2xx" path="res://scripts/player/base-player.gd" id="4"]
+[ext_resource type="Script" uid="uid://dw5h2k2m7bhpr" path="res://scripts/player/states/actualStates/base-attack.gd" id="5"]
+[ext_resource type="Script" uid="uid://c6jrh0dug68sl" path="res://scripts/player/states/actualStates/ki-blast.gd" id="6"]
+[ext_resource type="Script" uid="uid://duskyb6h8c44r" path="res://scripts/player/states/actualStates/fast-attack.gd" id="7"]
+[ext_resource type="Script" uid="uid://rs0xm1n3h6ur" path="res://scripts/player/states/actualStates/dead.gd" id="8"]
+[ext_resource type="Script" uid="uid://cv1na3xg6jwrt" path="res://scripts/player/states/actualStates/run.gd" id="9"]
+[ext_resource type="Script" uid="uid://ckxicma7cxpmk" path="res://scripts/player/states/actualStates/teleport.gd" id="10"]
+[ext_resource type="Script" uid="uid://bi0mo84mdsvol" path="res://scripts/player/states/actualStates/hit-wall.gd" id="11"]
+[ext_resource type="Script" uid="uid://dj7x1u0j2gg44" path="res://scripts/player/states/actualStates/hit.gd" id="12"]
+[ext_resource type="Script" uid="uid://bgsubsob6r0y2" path="res://scripts/player/states/actualStates/change-map.gd" id="13"]
+[ext_resource type="PackedScene" uid="uid://c6bh5j153qv6i" path="res://scenes/common/punch.tscn" id="14"]
+[ext_resource type="Script" uid="uid://c8ow66yruosid" path="res://scripts/player/states/actualStates/fly-change-map.gd" id="15"]
+[ext_resource type="Script" uid="uid://chi68xcd65p52" path="res://scripts/player/states/actualStates/defense.gd" id="16"]
+[ext_resource type="Script" uid="uid://bogpuxje4j4q1" path="res://scripts/player/states/actualStates/shield.gd" id="17"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(7.8, 2)
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(15.068, 24)
+
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(12.96382, 4.57102)
+
+[sub_resource type="RectangleShape2D" id="4"]
+size = Vector2(1050, 600)
+
+[node name="Player" type="CharacterBody2D" unique_id=1588714545]
+collision_layer = 257
+collision_mask = 2
+script = ExtResource("4")
+
+[node name="StatesManager" type="Node" parent="." unique_id=1540619782]
+script = ExtResource("3")
+
+[node name="Idle" type="Node" parent="StatesManager" unique_id=1571280919]
+script = ExtResource("2")
+
+[node name="Walk" type="Node" parent="StatesManager" unique_id=656238825]
+script = ExtResource("1")
+
+[node name="ChangeMap" type="Node" parent="StatesManager" unique_id=1524671699]
+script = ExtResource("13")
+
+[node name="FlyChangeMap" type="Node" parent="StatesManager" unique_id=1211828399]
+script = ExtResource("15")
+
+[node name="Run" type="Node" parent="StatesManager" unique_id=1462198465]
+script = ExtResource("9")
+
+[node name="BaseAttack" type="Node" parent="StatesManager" unique_id=1817116484]
+script = ExtResource("5")
+
+[node name="Defense" type="Node" parent="StatesManager" unique_id=205067479]
+script = ExtResource("16")
+
+[node name="Shield" type="Node" parent="StatesManager" unique_id=130285532]
+script = ExtResource("17")
+
+[node name="FastAttack" type="Node" parent="StatesManager" unique_id=1361596400]
+script = ExtResource("7")
+
+[node name="KiBlast" type="Node" parent="StatesManager" unique_id=539448656]
+script = ExtResource("6")
+
+[node name="Teleport" type="Node" parent="StatesManager" unique_id=1468670755]
+script = ExtResource("10")
+
+[node name="Hit" type="Node" parent="StatesManager" unique_id=314003566]
+script = ExtResource("12")
+
+[node name="HitWall" type="Node" parent="StatesManager" unique_id=1253335342]
+script = ExtResource("11")
+
+[node name="Dead" type="Node" parent="StatesManager" unique_id=2098314742]
+script = ExtResource("8")
+
+[node name="BaseAttack" parent="." unique_id=1141353655 instance=ExtResource("14")]
+collision_mask = 48
+
+[node name="HitWall" type="Area2D" parent="." unique_id=533363157]
+z_index = 2
+position = Vector2(0, 16)
+collision_layer = 1073741825
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape2D" parent="HitWall" unique_id=316564152]
+shape = SubResource("1")
+disabled = true
+
+[node name="VerticalHitBox" type="Area2D" parent="." unique_id=946615232]
+collision_layer = 4
+collision_mask = 0
+
+[node name="HitBox" type="CollisionShape2D" parent="VerticalHitBox" unique_id=1189355897]
+shape = SubResource("2")
+
+[node name="CheckHitBox" type="Area2D" parent="." unique_id=56241668]
+collision_layer = 8
+collision_mask = 0
+
+[node name="HitBox" type="CollisionShape2D" parent="CheckHitBox" unique_id=1576944872]
+shape = SubResource("2")
+
+[node name="VerticalCollision" type="CollisionShape2D" parent="." unique_id=526327665]
+z_index = 2
+position = Vector2(0, 14.5)
+shape = SubResource("3")
+
+[node name="Sight" type="Area2D" parent="." unique_id=1929523209]
+visible = false
+collision_layer = 0
+collision_mask = 256
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sight" unique_id=346748343]
+position = Vector2(0, 2)
+shape = SubResource("4")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=810239567]
+offset = Vector2(0, 2)
+zoom = Vector2(0.4, 0.4)
+
+[connection signal="body_entered" from="HitWall" to="StatesManager/Run" method="_on_HitWall_body_entered"]
+[connection signal="area_entered" from="VerticalHitBox" to="." method="_on_VerticalHitBox_area_entered"]
+[connection signal="body_entered" from="Sight" to="." method="_on_Sight_body_entered"]
+[connection signal="body_exited" from="Sight" to="." method="_on_Sight_body_exited"]

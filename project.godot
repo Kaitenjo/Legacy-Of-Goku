@@ -1,0 +1,49 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="LegacyOfGokuv2"
+run/main_scene="uid://ktly0xh81wb7"
+config/features=PackedStringArray("4.6", "Forward Plus")
+
+[autoload]
+
+Paths="*uid://bdu74cfg366ag"
+Events="*uid://dole72wgt08v3"
+Signals="*uid://cmqxr6pe7udwq"
+Utility="*uid://dy3vnqtd3k6tr"
+GameDB="*uid://kajydgrhvclp"
+FileSystemManager="*uid://bsio4ijcd2jq4"
+Settings="*uid://d0hccohj16yv5"
+AudioManager="*uid://o23xe176mmpp"
+UpdateManager="*uid://brnwmxphrmaoe"
+ComputerInfo="*uid://vg6gjy14121v"
+
+[display]
+
+window/size/viewport_width=3840
+window/size/viewport_height=2160
+window/size/mode=3
+window/canvas_textures/default_texture_filter=1
+
+[editor]
+
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"

@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://m0svox7i1g2a"]
+
+[ext_resource type="PackedScene" uid="uid://ktly0xh81wb7" path="res://scenes/npcs/squirrel/squirrel.tscn" id="1_8uh7m"]
+[ext_resource type="Script" uid="uid://bahs7nmk0ksyy" path="res://test.gd" id="1_ppyta"]
+[ext_resource type="PackedScene" uid="uid://tmupwr6v1okh" path="res://scenes/npcs/butterfly/butterfly.tscn" id="2_6uqi0"]
+[ext_resource type="PackedScene" uid="uid://dvsbcou1r1iy2" path="res://scenes/player/player.tscn" id="3_6uqi0"]
+
+[node name="Test" type="Node2D" unique_id=188397439]
+position = Vector2(1960, 1186)
+scale = Vector2(9.855, 9.855)
+script = ExtResource("1_ppyta")
+
+[node name="Squirrel" parent="." unique_id=277178578 instance=ExtResource("1_8uh7m")]
+position = Vector2(-42, 84)
+
+[node name="Butterfly" parent="." unique_id=315483833 instance=ExtResource("2_6uqi0")]
+
+[node name="Squirrel2" parent="." unique_id=1675612984 instance=ExtResource("1_8uh7m")]
+position = Vector2(16, 68)
+
+[node name="Squirrel3" parent="." unique_id=1475193431 instance=ExtResource("1_8uh7m")]
+position = Vector2(-80, 31)
+
+[node name="Squirrel4" parent="." unique_id=455734430 instance=ExtResource("1_8uh7m")]
+position = Vector2(115, -21)
+
+[node name="Squirrel5" parent="." unique_id=732101287 instance=ExtResource("1_8uh7m")]
+position = Vector2(-62, -81)
+
+[node name="Squirrel6" parent="." unique_id=1554155082 instance=ExtResource("1_8uh7m")]
+position = Vector2(55, -90)
+
+[node name="Butterfly2" parent="." unique_id=1925292069 instance=ExtResource("2_6uqi0")]
+position = Vector2(-49, -52)
+
+[node name="Butterfly3" parent="." unique_id=1121980667 instance=ExtResource("2_6uqi0")]
+position = Vector2(92, -3)
+
+[node name="Butterfly4" parent="." unique_id=1750843826 instance=ExtResource("2_6uqi0")]
+position = Vector2(19, -67)
+
+[node name="Butterfly5" parent="." unique_id=1007685613 instance=ExtResource("2_6uqi0")]
+position = Vector2(-115, -21)
+
+[node name="Squirrel7" parent="." unique_id=556522170 instance=ExtResource("1_8uh7m")]
+position = Vector2(-42, 84)
+
+[node name="Player" parent="." unique_id=587849754 instance=ExtResource("3_6uqi0")]
+position = Vector2(-28.310503, -16.03247)
