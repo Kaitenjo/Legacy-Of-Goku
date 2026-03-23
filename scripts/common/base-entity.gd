@@ -51,11 +51,11 @@ class ScouterData:
 	var name: String
 	var position: Vector2
 	var type: String
-	var stats: ComputerInfo.ScouterStats
+	var stats: ScouterStats
 	var animation: String
 	var frame: int
 	var flip_h: bool
-	var display_info: ComputerInfo.DisplayInfo
+	var display_info: DisplayInfo
 	var animate: bool
 	
 	func _init(name: String, position: Vector2, type: String, stats: ScouterStats, animation: String, frame: int, flip_h: bool, animate: bool = true):

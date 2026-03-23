@@ -10,22 +10,22 @@ config_version=5
 
 [application]
 
-config/name="LegacyOfGokuv2"
+config/name="LegacyOfGoku"
 run/main_scene="uid://ktly0xh81wb7"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
 [autoload]
 
-Paths="*uid://bdu74cfg366ag"
-Events="*uid://dole72wgt08v3"
-Signals="*uid://cmqxr6pe7udwq"
-Utility="*uid://dy3vnqtd3k6tr"
-GameDB="*uid://kajydgrhvclp"
-FileSystemManager="*uid://bsio4ijcd2jq4"
-Settings="*uid://d0hccohj16yv5"
+Paths="*uid://dj6ppspgavttg"
+Events="*uid://cwxwoaspy1mds"
+Signals="*uid://vxrxyifixfks"
+Utility="*uid://bwasleam4ln1m"
+GameDB="*uid://cm63hdjht3k6l"
+FilesSystemManager="*uid://daej0fgujxu0c"
+Settings="*uid://b7qsmtem7r4jl"
 AudioManager="*uid://o23xe176mmpp"
-UpdateManager="*uid://brnwmxphrmaoe"
-ComputerInfo="*uid://vg6gjy14121v"
+UpdateManager="*uid://ct623imih8bl8"
+ComputerInfo="*uid://crj4qidyp4ede"
 
 [display]
 
