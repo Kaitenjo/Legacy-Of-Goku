@@ -5,8 +5,8 @@ func _ready() -> void:
 		
 	var data = FileManager.load_updates_file()
 	var settings = FileManager.load_settings_file()
-	for i in range(settings.get("version"), data.keys().size()):
-		settings["version"] += 1
+	for i in range(settings.get('version'), data.keys().size()):
+		settings['version'] += 1
 		var current_data = data.get(str(i))
 		for area in current_data.keys():
 			var area_data = FileManager.load_save_file(Paths.MAPS + area)

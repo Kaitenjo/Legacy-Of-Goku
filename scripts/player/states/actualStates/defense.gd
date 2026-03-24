@@ -7,10 +7,10 @@ func _ready():
 	animation = 'Defense'
 
 func input(event: InputEvent) -> int:
-	if Input.is_action_just_released("defense"):
+	if Input.is_action_just_released('defense'):
 		return State.Idle
 	
-	if Input.is_action_just_pressed("shield") and not player.shield_activated and player.check_enough_energy(5):
+	if Input.is_action_just_pressed('shield') and not player.shield_activated and player.check_enough_energy(5):
 		return State.Shield
 		
 	return State.Null

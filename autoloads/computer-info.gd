@@ -1,37 +1,37 @@
 extends Node2D
 
 var NPC_DATA := {
-	"Chichi/Classic": ScouterStats.new(0, 0, 0, 0),
-	"Turtle/Classic": ScouterStats.new(0, 0, 0, 0),
-	"Gohan/Kid": ScouterStats.new(0, 0, 0, 0),
-	"Krilin/Classic": ScouterStats.new(0, 0, 0, 0),
-	"Bulma/Classic": ScouterStats.new(0, 0, 0, 0),
-	"MasterRoshi/RaditzSaga": ScouterStats.new(0, 0, 0, 0),
-	"Raditz/Classic": ScouterStats.new(1000, 50, 60, 35),
-	"Popo/Classic": ScouterStats.new(830, 14, 40, 25),
-	"Kami/Classic": ScouterStats.new(1130, 20, 45, 16),
-	"Korin/Classic": ScouterStats.new(3470, 25, 59, 43)
+	'Chichi/Classic': ScouterStats.new(0, 0, 0, 0),
+	'Turtle/Classic': ScouterStats.new(0, 0, 0, 0),
+	'Gohan/Kid': ScouterStats.new(0, 0, 0, 0),
+	'Krilin/Classic': ScouterStats.new(0, 0, 0, 0),
+	'Bulma/Classic': ScouterStats.new(0, 0, 0, 0),
+	'MasterRoshi/RaditzSaga': ScouterStats.new(0, 0, 0, 0),
+	'Raditz/Classic': ScouterStats.new(1000, 50, 60, 35),
+	'Popo/Classic': ScouterStats.new(830, 14, 40, 25),
+	'Kami/Classic': ScouterStats.new(1130, 20, 45, 16),
+	'Korin/Classic': ScouterStats.new(3470, 25, 59, 43)
 }
 
 var DISPLAY_DATA := {
-	"Snake": DisplayInfo.new('', false),
-	"Wolf": DisplayInfo.new('', false),
-	"Eagle": DisplayInfo.new('', false),
-	"Tigerman": DisplayInfo.new('', false),
-	"T-Rex": DisplayInfo.new('', false),
-	"Goku/Classic": DisplayInfo.new(),
-	"Piccolo/Classic": DisplayInfo.new(),
-	"Vegeta/Android": DisplayInfo.new(),
-	"Chichi/Classic": DisplayInfo.new(),
-	"Turtle/Classic": DisplayInfo.new(),
-	"Gohan/Kid": DisplayInfo.new(),
-	"Krilin/Classic": DisplayInfo.new(),
-	"Bulma/Classic": DisplayInfo.new(),
-	"MasterRoshi/RaditzSaga": DisplayInfo.new(),
-	"Raditz/Classic": DisplayInfo.new(),
-	"Popo/Classic": DisplayInfo.new(),
-	"Kami/Classic": DisplayInfo.new(),
-	"Korin/Classic": DisplayInfo.new()
+	'Snake': DisplayInfo.new('', false),
+	'Wolf': DisplayInfo.new('', false),
+	'Eagle': DisplayInfo.new('', false),
+	'Tigerman': DisplayInfo.new('', false),
+	'T-Rex': DisplayInfo.new('', false),
+	'Goku/Classic': DisplayInfo.new(),
+	'Piccolo/Classic': DisplayInfo.new(),
+	'Vegeta/Android': DisplayInfo.new(),
+	'Chichi/Classic': DisplayInfo.new(),
+	'Turtle/Classic': DisplayInfo.new(),
+	'Gohan/Kid': DisplayInfo.new(),
+	'Krilin/Classic': DisplayInfo.new(),
+	'Bulma/Classic': DisplayInfo.new(),
+	'MasterRoshi/RaditzSaga': DisplayInfo.new(),
+	'Raditz/Classic': DisplayInfo.new(),
+	'Popo/Classic': DisplayInfo.new(),
+	'Kami/Classic': DisplayInfo.new(),
+	'Korin/Classic': DisplayInfo.new()
 }
 
 func get_npc_stats_data(npc_name: String) -> ScouterStats:

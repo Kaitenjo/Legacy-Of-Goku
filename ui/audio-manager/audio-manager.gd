@@ -4,8 +4,8 @@ extends Control
 @onready var sfx_container := $Sounds
 
 func _ready() -> void:
-	Events.connect("music_value_changed", set_music_volume)
-	Events.connect("sfx_value_changed", set_sfx_volume)
+	Events.connect('music_value_changed', set_music_volume)
+	Events.connect('sfx_value_changed', set_sfx_volume)
 	var settings := FileManager.load_settings_file()
 	music.volume_db = step_to_music_volume(settings.audio.music)
 	
@@ -14,7 +14,7 @@ func _ready() -> void:
 		child.volume_db = volume_sfx
 
 func play_music(new_track: String) -> void:
-	new_track = Paths.MUSIC + new_track + ".ogg"
+	new_track = Paths.MUSIC + new_track + '.ogg'
 	if new_track != music.stream.resource_path:
 		music.stream = load(new_track)
 		music.play()

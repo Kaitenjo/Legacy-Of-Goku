@@ -1,7 +1,7 @@
 extends PlayerBaseState
 
 func _ready():
-	animation = "Short Teleport"
+	animation = 'Short Teleport'
 	
 func physics_process(delta: float) -> int:
 	if player.hit:
@@ -9,14 +9,14 @@ func physics_process(delta: float) -> int:
 		
 	if completed:
 		if get_input_vector():
-			return State.Run if Input.is_action_pressed("running") else State.Walk
+			return State.Run if Input.is_action_pressed('running') else State.Walk
 		else:
 			return State.Idle
 			
 	return State.Null
 
 func enter() -> void:
-	Events.emit_signal("check_collision", get_direction_vector())
+	Events.emit_signal('check_collision', get_direction_vector())
 	var position: Vector2 = await Events.checked_collision
 	
 	if player.position != position:

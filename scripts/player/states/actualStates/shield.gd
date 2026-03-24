@@ -1,10 +1,10 @@
 extends PlayerBaseState
 
 func input(event: InputEvent) -> int:
-	if Input.is_action_just_released("defense"):
+	if Input.is_action_just_released('defense'):
 		return State.Idle
 	
-	if Input.is_action_just_released("shield"):
+	if Input.is_action_just_released('shield'):
 		return State.Defense
 		
 	return State.Null

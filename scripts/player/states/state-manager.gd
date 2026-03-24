@@ -56,7 +56,7 @@ func create_characters_states(player: Player, character_name: String, character_
 	
 	for state in character_states:
 		var new_node: PlayerBaseState = PlayerBaseState.new()
-		new_node.script = load(Paths.PLAYER_STATES + character_name + "/" + state.node_script + ".gd")
+		new_node.script = load(Paths.PLAYER_STATES + character_name + '/' + state.node_script + '.gd')
 		new_node.player = player
 		new_nodes.append(new_node)
 	

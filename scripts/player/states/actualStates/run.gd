@@ -3,10 +3,10 @@ extends MoveState
 var hit_wall: bool = false
 
 func _ready():
-	animation = "Run"
+	animation = 'Run'
 	
 func input(_event: InputEvent) -> int:
-	if Input.is_action_just_released("running"):
+	if Input.is_action_just_released('running'):
 		return State.Walk
 	
 	return check_player_input()

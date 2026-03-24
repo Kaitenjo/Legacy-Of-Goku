@@ -5,7 +5,7 @@ var vector_direction := Vector2()
 var increase := 50
 
 func _ready():
-	animation = "Walk"
+	animation = 'Walk'
 	
 func input(event: InputEvent) -> int:
 	return State.Null
@@ -25,4 +25,4 @@ func initialize_state() -> void:
 
 #func completed() -> void:
 	#completed = true
-	#play_animation("Stand")
+	#play_animation('Stand')

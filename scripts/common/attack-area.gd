@@ -30,10 +30,10 @@ func init(caster: CharacterBody2D, layer: int, direction: int, damage: int, knoc
 	self.set_collision_mask_value(layer, true)
  
 func enable():
-	shape.call_deferred("set", "disabled", false)
+	shape.call_deferred('set', 'disabled', false)
 
 func disable():
-	shape.call_deferred("set", "disabled", true)
+	shape.call_deferred('set', 'disabled', true)
 
 func set_rotate(direction: int) -> void:
 	rotation_degrees = Direction.get_degrees(direction)
@@ -42,7 +42,7 @@ func clone() -> AreaData:
 	return AreaData.new(caster, direction, damage, knockback, time_knockback, tick_damage, type)
 
 func update_knockback(value: float):
-	emit_signal("knockback_updated", value)
+	emit_signal('knockback_updated', value)
 
 class AreaData:
 	var caster: CharacterBody2D

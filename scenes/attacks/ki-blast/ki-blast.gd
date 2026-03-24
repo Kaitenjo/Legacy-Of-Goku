@@ -32,14 +32,14 @@ func init(caster: CharacterBody2D, attack_direction: int, character_direction: i
 	
 	rotation_degrees = Direction.get_degrees(attack_direction)
 	hitbox.init(caster, layer, attack_direction, power, 48, 0.7, 0, AttackArea.Type.Ability)
-	sprite.play("default")
+	sprite.play('default')
 	apply_impulse(Vector2(), Direction.get_vector(attack_direction) * 300)
 	return Direction.get_ability_position(positions, character_direction, attack_direction)
 	
 func delete() -> void:
 	for node in [body_collision, hitbox, clash]: node.queue_free()
 	sleeping = true
-	sprite.play("hit")
+	sprite.play('hit')
 	rotation_degrees = -90
 	await Utility.pause(0.25)
 	queue_free()

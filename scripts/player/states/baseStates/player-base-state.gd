@@ -3,16 +3,16 @@ class_name PlayerBaseState
 
 const inputs: Array = [
 	[
-		"left_stick_left", 
-		"left_stick_right", 
-		"left_stick_up", 
-		"left_stick_down"
+		'left_stick_left', 
+		'left_stick_right', 
+		'left_stick_up', 
+		'left_stick_down'
 	], 
 	[
-		"move_left", 
-		"move_right", 
-		"move_up", 
-		"move_down"
+		'move_left', 
+		'move_right', 
+		'move_up', 
+		'move_down'
 	]
 ]
 	
@@ -46,7 +46,7 @@ func get_input_vector() -> Vector2:
 	var vector: Vector2
 	
 	for args in inputs:
-		vector = Input.callv("get_vector", args)
+		vector = Input.callv('get_vector', args)
 		if vector != Vector2.ZERO: 
 			break
 		

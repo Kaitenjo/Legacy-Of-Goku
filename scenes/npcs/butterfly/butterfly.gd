@@ -15,4 +15,4 @@ func  play_animation(name_animation: String) -> void:
 			direction_animation = 'up'
 			pass
 			
-	sprite.play(name_animation + "_" + direction_animation)
+	sprite.play(name_animation + '_' + direction_animation)

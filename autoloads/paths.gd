@@ -71,7 +71,7 @@ const KEY_TO_SCENE := {
 		'Living Room': 'LivingRoom',
 		'Goku\'s Room': 'Goku\'s Room',
 		'Gohan\'s Room': 'Gohan\'s Room',
-		'Cave': "Cave",
+		'Cave': 'Cave',
 		'Ravine': 'Ravine',
 		'Eastern Forest 1': 'EasternForest1',
 		'Eastern Forest 2': 'EasternForest2',

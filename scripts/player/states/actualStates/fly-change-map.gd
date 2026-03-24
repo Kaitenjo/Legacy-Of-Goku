@@ -12,5 +12,5 @@ func setup(direction: int) -> void:
 func enter() -> void:
 	vector_direction = Direction.get_vector(direction)
 	player.sprite.flip_h = Direction.is_right(direction)
-	player.sprite.play(animation + " " +  Direction.get_direction_animation(direction))
+	player.sprite.play(animation + ' ' +  Direction.get_direction_animation(direction))
 

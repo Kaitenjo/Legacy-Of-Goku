@@ -62,14 +62,14 @@ static func get_opposite_direction(direction: int) -> int:
 	
 static func get_direction_animation(direction: int, exists_left_animation: bool = false) -> String:
 	var vectors := {
-		Directions.LEFT: "left" if exists_left_animation else "right",
-		Directions.RIGHT: "right",
-		Directions.UP: "up",
-		Directions.DOWN: "down",
-		Directions.CN1: "cn1" if exists_left_animation else "cn2",
-		Directions.CN2: "cn2",
-		Directions.CN3: "cn3" if exists_left_animation else "cn4",
-		Directions.CN4: "cn4",
+		Directions.LEFT: 'left' if exists_left_animation else 'right',
+		Directions.RIGHT: 'right',
+		Directions.UP: 'up',
+		Directions.DOWN: 'down',
+		Directions.CN1: 'cn1' if exists_left_animation else 'cn2',
+		Directions.CN2: 'cn2',
+		Directions.CN3: 'cn3' if exists_left_animation else 'cn4',
+		Directions.CN4: 'cn4',
 	}
 	return vectors[direction]
 

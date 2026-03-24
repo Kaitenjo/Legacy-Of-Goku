@@ -3,9 +3,9 @@ class_name CharacterStates
 
 static func get_states(character: String) -> Array:
 	var states: Dictionary = {
-		"Goku": [CharacterState.new("Kamehameha", "kamehameha", PlayerBaseState.State.Kamehameha, 5)],
-		"Piccolo": [CharacterState.new("SpecialBeamCannon", "kamehameha", PlayerBaseState.State.SpecialBeamCannon, 5)],
-		"Vegeta": [CharacterState.new("FinalFlash", "kamehameha", PlayerBaseState.State.FinalFlash, 5)]
+		'Goku': [CharacterState.new('Kamehameha', 'kamehameha', PlayerBaseState.State.Kamehameha, 5)],
+		'Piccolo': [CharacterState.new('SpecialBeamCannon', 'kamehameha', PlayerBaseState.State.SpecialBeamCannon, 5)],
+		'Vegeta': [CharacterState.new('FinalFlash', 'kamehameha', PlayerBaseState.State.FinalFlash, 5)]
 	}
 	return states.get(character)
 

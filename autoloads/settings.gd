@@ -8,8 +8,8 @@ var ux: bool
 var DEFAULT_SETTINGS := SettingsDTO.new(4, 4, 4, 8, false, 1)
 
 func _ready() -> void:
-	Events.connect("zoom_camera_value_changed", update_zoom_camera)
-	Events.connect("text_speed_value_changed", update_text_speed)
+	Events.connect('zoom_camera_value_changed', update_zoom_camera)
+	Events.connect('text_speed_value_changed', update_text_speed)
 	resolution = DisplayServer.window_get_size() / Vector2i(1360, 768)
 	if not FileManager.settings_file_exists(): FileManager.create_settings_file(DEFAULT_SETTINGS)
 	var new_settings := FileManager.load_settings_file()
@@ -23,8 +23,8 @@ func update_text_speed(val: int) -> void:
 func update_zoom_camera(val: int) -> void:
 	var decrease = (Vector2(0.4, 0.4) - Vector2(0.2, 0.2))/(8 * resolution)
 	zoom_camera =  Vector2(0.4, 0.4)/resolution - (8 - val) * decrease
-	Events.emit_signal("update_zoom_camera")
+	Events.emit_signal('update_zoom_camera')
 
 func update_ux(val: bool):
 	ux = val
-	Events.emit_signal("update_ux", val)
+	Events.emit_signal('update_ux', val)

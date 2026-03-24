@@ -4,7 +4,7 @@ const INCREASE: int = 25
 var vector_direction: Vector2 = Vector2.ZERO
 
 func _ready():
-	animation = "Hit"
+	animation = 'Hit'
 	
 func physics_process(delta: float) -> int:
 	if not player.stats.health:
@@ -14,7 +14,7 @@ func physics_process(delta: float) -> int:
 	
 	if completed:
 		if get_input_vector():
-			return State.Run if Input.is_action_pressed("running") else State.Walk
+			return State.Run if Input.is_action_pressed('running') else State.Walk
 		else:
 			return State.Idle
 			
@@ -32,11 +32,11 @@ func enter() -> void:
 	
 	#diagonal not handled
 	vector_direction = Direction.get_opposite_vector(player.direction)
-	AudioManager.play_combact_sound("Hit" + str(Utility.random_int(1, 3)))
+	AudioManager.play_combact_sound('Hit' + str(Utility.random_int(1, 3)))
 	if await player.wait(0.5): return
 	completed = true
 
 func reset_state() -> void:
 	vector_direction = Vector2.ZERO
 	player.hit = false
-	Events.emit_signal("enable_actual_entity")
+	Events.emit_signal('enable_actual_entity')

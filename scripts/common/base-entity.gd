@@ -12,7 +12,7 @@ var state_timer: StateTimer = StateTimer.new()
 var time_left: float = 0
 
 func _ready():
-	state_timer.connect("set_time_left", set_time_left)
+	state_timer.connect('set_time_left', set_time_left)
 
 func _physics_process(delta: float) -> void:
 	machine_state.physics_process(delta)
@@ -25,7 +25,7 @@ func get_direction() -> int:
 
 func play_animation(animation: String, backward: bool = false) -> void:
 	sprite.flip_h = not exists_left_animation and direction == Direction.Directions.LEFT
-	animation = animation + " " + Direction.get_direction_animation(direction, exists_left_animation)
+	animation = animation + ' ' + Direction.get_direction_animation(direction, exists_left_animation)
 	sprite.play(animation, backward)
 
 func wait(time: float) -> bool:

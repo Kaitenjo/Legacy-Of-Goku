@@ -1,10 +1,10 @@
 extends MoveState
 
 func _ready():
-	animation = "Walk"
+	animation = 'Walk'
 	
 func input(_event: InputEvent) -> int:
-	if Input.is_action_pressed("running"):
+	if Input.is_action_pressed('running'):
 		return State.Run
 		
 	return check_player_input()
