@@ -1,0 +1,1253 @@
+[gd_scene format=3 uid="uid://b2a442dhdu67"]
+
+[ext_resource type="Texture2D" uid="uid://cclfju2xkdggo" path="res://assets/sprites/goku/classic/movement/stand/down-2.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://cv7k75yvo5ah3" path="res://assets/sprites/goku/classic/movement/walk/right/4.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://d255n7re7snt4" path="res://assets/sprites/goku/classic/movement/walk/up/1.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c2aeteawn1g8s" path="res://assets/sprites/goku/classic/movement/walk/up/3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cfkwxdk2fi586" path="res://assets/sprites/goku/classic/movement/walk/down/3.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cbwhln0bvoad1" path="res://assets/sprites/goku/classic/movement/stand/right-2.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dcuupnkepr7b0" path="res://assets/sprites/goku/classic/movement/stand/special-1.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dkq3b5mc350o5" path="res://assets/sprites/goku/classic/movement/walk/up/4.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cqol2vwhqeemc" path="res://assets/sprites/goku/classic/movement/walk/down/4.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://dq7w5ff6fc3db" path="res://assets/sprites/goku/classic/movement/walk/right/1.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://11l2u8u3pusl" path="res://assets/sprites/goku/classic/movement/stand/right.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://cbjqwpc7o6e02" path="res://assets/sprites/goku/classic/movement/stand/up.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://ccq5qhbgxsfpm" path="res://assets/sprites/goku/classic/movement/walk/right/2.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bo0ilvf1d00p" path="res://assets/sprites/goku/classic/movement/walk/down/2.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://dap6i2qlgpnqj" path="res://assets/sprites/goku/classic/movement/stand/special-2.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://b80psjsgg7sjm" path="res://assets/sprites/goku/classic/movement/walk/up/2.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://ctsmsd1r0os7n" path="res://assets/sprites/goku/classic/movement/walk/down/1.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://betnlb8mwlvdk" path="res://assets/sprites/goku/classic/movement/walk/right/3.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://d4fsolq4r8c38" path="res://assets/sprites/goku/classic/movement/stand/special-3.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://d1i1yu7nkgto1" path="res://assets/sprites/goku/classic/movement/run/up/3.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://cx83d84tjewyv" path="res://assets/sprites/goku/classic/movement/stand/down.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://ddwl07bdsfpqe" path="res://assets/sprites/goku/classic/movement/stand/special-4.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://dnu2x1xc4x5k2" path="res://assets/sprites/goku/classic/movement/run/down/4.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://bed7mihqnl4h0" path="res://assets/sprites/goku/classic/death/1.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://l7q3cqwsoi6a" path="res://assets/sprites/goku/classic/movement/run/right/1.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://d05tjgrd2pxdv" path="res://assets/sprites/goku/classic/movement/run/right/2.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://baf1iqooxor5c" path="res://assets/sprites/goku/classic/death/3.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://bgm0lmjpthcy6" path="res://assets/sprites/goku/classic/movement/run/right/3.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://c5k5542duy62q" path="res://assets/sprites/goku/classic/movement/run/right/4.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://b6lpr75m3558u" path="res://assets/sprites/goku/classic/movement/run/up/1.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://bw522ghgbvqty" path="res://assets/sprites/goku/classic/death/2.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://bcthglj5j3eny" path="res://assets/sprites/goku/classic/movement/run/up/2.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://buat0ycaltnjb" path="res://assets/sprites/goku/classic/movement/run/up/4.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://dxoi1jk7go062" path="res://assets/sprites/goku/classic/movement/run/down/1.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://dkweb0h680c1g" path="res://assets/sprites/goku/classic/movement/run/down/2.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://c2j3cpdj8kxg6" path="res://assets/sprites/goku/classic/movement/run/down/3.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://ch3t0iybijdpf" path="res://assets/sprites/goku/classic/attack/ki-blast/down/2.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://biaxd3cwdcujl" path="res://assets/sprites/goku/classic/death/4.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://dr83py4mllubn" path="res://assets/sprites/goku/classic/attack/ki-blast/right/2.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://b0tpa7w1o0sy7" path="res://assets/sprites/goku/classic/attack/ki-blast/up/2.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://cdfy178k62uwk" path="res://assets/sprites/goku/classic/attack/ki-blast/right/3.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://bjc00qjeqibr1" path="res://assets/sprites/goku/classic/attack/ki-blast/right/1.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://b357js8ayjpu0" path="res://assets/sprites/goku/classic/attack/kamehameha/right/5.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://egb230qfubeo" path="res://assets/sprites/goku/classic/attack/kamehameha/down/5.png" id="44"]
+[ext_resource type="Texture2D" uid="uid://dmq36i8lckfqs" path="res://assets/sprites/goku/classic/attack/ki-blast/up/3.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://cbawf4po1ni1g" path="res://assets/sprites/goku/classic/attack/ki-blast/down/1.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://bhfbjf4baoi7" path="res://assets/sprites/goku/classic/attack/ki-blast/down/3.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://b602s3d2oov23" path="res://assets/sprites/goku/classic/attack/ki-blast/up/1.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://doecvrnapuk4j" path="res://assets/sprites/goku/classic/attack/kamehameha/up/5.png" id="49"]
+[ext_resource type="Texture2D" uid="uid://bympr8lfmjjoe" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/right-up-1.png" id="50"]
+[ext_resource type="Texture2D" uid="uid://b5b2qb3y7fipf" path="res://assets/sprites/goku/classic/attack/base-attack/down/kick-3.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://dfaxjpop7srxd" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/down-right-2.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://cupcbbsjj8bhs" path="res://assets/sprites/goku/classic/attack/base-attack/down/punch-2.png" id="53"]
+[ext_resource type="Texture2D" uid="uid://bwxuxjuptkgs3" path="res://assets/sprites/goku/classic/attack/base-attack/down/punch-1.png" id="54"]
+[ext_resource type="Texture2D" uid="uid://bfqkdn1cqeyd0" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/right-down-2.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://cei7hqy2t7j2" path="res://assets/sprites/goku/classic/attack/base-attack/down/punch-4.png" id="56"]
+[ext_resource type="Texture2D" uid="uid://64srrplcqwl8" path="res://assets/sprites/goku/classic/attack/base-attack/down/kick-4.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://dcxlhkm85vm4p" path="res://assets/sprites/goku/classic/attack/base-attack/down/punch-3.png" id="58"]
+[ext_resource type="Texture2D" uid="uid://ceyopiq1lb8ks" path="res://assets/sprites/goku/classic/attack/base-attack/down/kick-1.png" id="59"]
+[ext_resource type="Texture2D" uid="uid://dtngyy885ldi1" path="res://assets/sprites/goku/classic/attack/base-attack/down/kick-2.png" id="60"]
+[ext_resource type="Texture2D" uid="uid://c2o56316at8kq" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/down-left-1.png" id="61"]
+[ext_resource type="Texture2D" uid="uid://cbk00jk0w745a" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/down-left-2.png" id="62"]
+[ext_resource type="Texture2D" uid="uid://dn52oqn24jmdn" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/down-right-1.png" id="63"]
+[ext_resource type="Texture2D" uid="uid://vtowkl2d3lbl" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/right-down-1.png" id="64"]
+[ext_resource type="Texture2D" uid="uid://iyq3xcpprpmj" path="res://assets/sprites/goku/classic/attack/base-attack/right/back-3.png" id="65"]
+[ext_resource type="Texture2D" uid="uid://cf2wmgxage8fq" path="res://assets/sprites/goku/classic/attack/base-attack/right/back-4.png" id="66"]
+[ext_resource type="Texture2D" uid="uid://cxxb6mmrs78kb" path="res://assets/sprites/goku/classic/attack/base-attack/right/back-1.png" id="67"]
+[ext_resource type="Texture2D" uid="uid://boym7lfeh6ete" path="res://assets/sprites/goku/classic/attack/base-attack/up/kick-1.png" id="68"]
+[ext_resource type="Texture2D" uid="uid://cscfvqjag7gnr" path="res://assets/sprites/goku/classic/attack/base-attack/up/kick-2.png" id="69"]
+[ext_resource type="Texture2D" uid="uid://dq5o2vmg8bwg6" path="res://assets/sprites/goku/classic/attack/base-attack/right/back-2.png" id="70"]
+[ext_resource type="Texture2D" uid="uid://d4gvnfbcd4f56" path="res://assets/sprites/goku/classic/attack/base-attack/right/kick-1.png" id="71"]
+[ext_resource type="Texture2D" uid="uid://caml60xrdgpyc" path="res://assets/sprites/goku/classic/attack/base-attack/right/front-4.png" id="72"]
+[ext_resource type="Texture2D" uid="uid://dlij78saylm0q" path="res://assets/sprites/goku/classic/attack/base-attack/up/punch-1.png" id="73"]
+[ext_resource type="Texture2D" uid="uid://tlsf7fmrdgrj" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/right-up-2.png" id="74"]
+[ext_resource type="Texture2D" uid="uid://2d4k71stlc8a" path="res://assets/sprites/goku/classic/attack/base-attack/up/punch-3.png" id="75"]
+[ext_resource type="Texture2D" uid="uid://c606koaews2oq" path="res://assets/sprites/goku/classic/attack/base-attack/right/front-2.png" id="76"]
+[ext_resource type="Texture2D" uid="uid://71fcgrjtodap" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/up-right-1.png" id="77"]
+[ext_resource type="Texture2D" uid="uid://dqrbl5wt40gp4" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/up-right-2.png" id="78"]
+[ext_resource type="Texture2D" uid="uid://dwauxnc0ichsr" path="res://assets/sprites/goku/classic/attack/base-attack/up/punch-4.png" id="79"]
+[ext_resource type="Texture2D" uid="uid://c41klyjtnhqu5" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/up-left-1.png" id="80"]
+[ext_resource type="Texture2D" uid="uid://cca7x383byy7e" path="res://assets/sprites/goku/classic/attack/kamehameha/diagonal/up-left-2.png" id="81"]
+[ext_resource type="Texture2D" uid="uid://bqruh6u6srjto" path="res://assets/sprites/goku/classic/death/6.png" id="82"]
+[ext_resource type="Texture2D" uid="uid://bvo5pm4fiam81" path="res://assets/sprites/goku/classic/death/5.png" id="83"]
+[ext_resource type="Texture2D" uid="uid://mmgq26pe443u" path="res://assets/sprites/goku/classic/attack/base-attack/right/front-3.png" id="84"]
+[ext_resource type="Texture2D" uid="uid://frijc3v0je5r" path="res://assets/sprites/goku/classic/attack/base-attack/up/punch-2.png" id="85"]
+[ext_resource type="Texture2D" uid="uid://dx6qk281pma50" path="res://assets/sprites/goku/classic/attack/base-attack/right/kick-2.png" id="86"]
+[ext_resource type="Texture2D" uid="uid://dxvq2bsws7hxg" path="res://assets/sprites/goku/classic/movement/fly/up-right-3.png" id="87"]
+[ext_resource type="Texture2D" uid="uid://csll48rtb0pqy" path="res://assets/sprites/goku/classic/attack/base-attack/right/kick-3.png" id="88"]
+[ext_resource type="Texture2D" uid="uid://dtvs1ufuhutd2" path="res://assets/sprites/goku/classic/attack/base-attack/right/kick-4.png" id="89"]
+[ext_resource type="Texture2D" uid="uid://2bhyh53ovumq" path="res://assets/sprites/goku/classic/attack/base-attack/right/front-1.png" id="90"]
+[ext_resource type="Texture2D" uid="uid://c1q3hvqprj8lt" path="res://assets/sprites/goku/classic/attack/base-attack/up/kick-4.png" id="91"]
+[ext_resource type="Texture2D" uid="uid://dvcwcpwgkqknb" path="res://assets/sprites/goku/classic/movement/fly/up-3.png" id="92"]
+[ext_resource type="Texture2D" uid="uid://bh5it5eas3kts" path="res://assets/sprites/goku/classic/movement/fly/up-2.png" id="93"]
+[ext_resource type="Texture2D" uid="uid://b52tmlxegb0jl" path="res://assets/sprites/goku/classic/movement/fly/up-right-2.png" id="94"]
+[ext_resource type="Texture2D" uid="uid://cto6l2ech6ctk" path="res://assets/sprites/goku/classic/movement/fly/down-right-3.png" id="95"]
+[ext_resource type="Texture2D" uid="uid://5p8jvyilfqoh" path="res://assets/sprites/goku/classic/attack/base-attack/up/kick-3.png" id="96"]
+[ext_resource type="Texture2D" uid="uid://2mvy5xj0xy6m" path="res://assets/sprites/goku/classic/movement/fly/down-1.png" id="97"]
+[ext_resource type="Texture2D" uid="uid://cjso2ccyu225p" path="res://assets/sprites/goku/classic/movement/fly/down-2.png" id="98"]
+[ext_resource type="Texture2D" uid="uid://cff5qtynbr8ef" path="res://assets/sprites/goku/classic/movement/fly/down-3.png" id="99"]
+[ext_resource type="Texture2D" uid="uid://02fxgoopxkjs" path="res://assets/sprites/goku/classic/movement/fly/down-right-1.png" id="100"]
+[ext_resource type="Texture2D" uid="uid://do7bndvhtsh2v" path="res://assets/sprites/goku/classic/movement/fly/down-right-2.png" id="101"]
+[ext_resource type="Texture2D" uid="uid://d1pam32rc7ysp" path="res://assets/sprites/goku/classic/movement/fly/up-1.png" id="102"]
+[ext_resource type="Texture2D" uid="uid://cyjwa43rsbf5w" path="res://assets/sprites/goku/classic/movement/fly/up-right-1.png" id="103"]
+[ext_resource type="Texture2D" uid="uid://ddr2lalv3u2dg" path="res://assets/sprites/goku/classic/movement/hit/down/1.png" id="104"]
+[ext_resource type="Texture2D" uid="uid://b5ip2eud165hm" path="res://assets/sprites/goku/classic/movement/hit/down/3.png" id="105"]
+[ext_resource type="Texture2D" uid="uid://beehm5ouhbedr" path="res://assets/sprites/goku/classic/movement/hit/down/4.png" id="106"]
+[ext_resource type="Texture2D" uid="uid://7xsvfp5hf2f5" path="res://assets/sprites/goku/classic/movement/hit/up/3.png" id="107"]
+[ext_resource type="Texture2D" uid="uid://dn58jde1m7lyk" path="res://assets/sprites/goku/classic/movement/hit/right/4.png" id="108"]
+[ext_resource type="Texture2D" uid="uid://d3xx2vlftvh27" path="res://assets/sprites/goku/classic/movement/hit/up/2.png" id="109"]
+[ext_resource type="Texture2D" uid="uid://7luy0smipwdk" path="res://assets/sprites/goku/classic/movement/hit/right/1.png" id="110"]
+[ext_resource type="Texture2D" uid="uid://fwo0ldg0hy4b" path="res://assets/sprites/goku/classic/movement/hit/right/3.png" id="111"]
+[ext_resource type="Texture2D" uid="uid://bfcmmfg4g4whm" path="res://assets/sprites/goku/classic/movement/hit/down/2.png" id="112"]
+[ext_resource type="Texture2D" uid="uid://dcvof2iauktpv" path="res://assets/sprites/goku/classic/movement/hit/right/2.png" id="113"]
+[ext_resource type="Texture2D" uid="uid://idrdsj7w8qm7" path="res://assets/sprites/goku/classic/movement/hit/up/4.png" id="114"]
+[ext_resource type="Texture2D" uid="uid://coptc1ecvvbn0" path="res://assets/sprites/goku/classic/movement/defense/down.png" id="115"]
+[ext_resource type="Texture2D" uid="uid://r41dtjma622w" path="res://assets/sprites/goku/classic/movement/defense/right.png" id="116"]
+[ext_resource type="Texture2D" uid="uid://c1dy02tb1xwr" path="res://assets/sprites/goku/classic/movement/defense/up.png" id="117"]
+[ext_resource type="Texture2D" uid="uid://bpeemqpf66564" path="res://assets/sprites/goku/classic/movement/hit/up/1.png" id="118"]
+[ext_resource type="Texture2D" uid="uid://bg65jmlpyrsw1" path="res://assets/sprites/goku/classic/movement/hit/right/7.png" id="122"]
+[ext_resource type="Texture2D" uid="uid://bk0bwhdmdodd8" path="res://assets/sprites/goku/classic/movement/hit/right/5.png" id="123"]
+[ext_resource type="Texture2D" uid="uid://7033uad61kyj" path="res://assets/sprites/goku/classic/movement/hit/right/6.png" id="124"]
+[ext_resource type="Texture2D" uid="uid://do0ml3niir6l3" path="res://assets/sprites/goku/classic/movement/hit/up/5.png" id="125"]
+[ext_resource type="Texture2D" uid="uid://b6f2w7r27x1dc" path="res://assets/sprites/goku/classic/movement/hit/up/6.png" id="126"]
+[ext_resource type="Texture2D" uid="uid://dh54txlrqmxb2" path="res://assets/sprites/goku/classic/movement/hit/up/7.png" id="127"]
+[ext_resource type="Texture2D" uid="uid://bckxog0h4doc4" path="res://assets/sprites/goku/classic/movement/hit/down/5.png" id="128"]
+[ext_resource type="Texture2D" uid="uid://dhr30vpu6dyrk" path="res://assets/sprites/goku/classic/movement/hit/down/6.png" id="129"]
+[ext_resource type="Texture2D" uid="uid://34rpaxy2t4dj" path="res://assets/sprites/goku/classic/movement/hit/down/7.png" id="130"]
+[ext_resource type="Texture2D" uid="uid://dmka8ml30sb44" path="res://assets/sprites/goku/classic/movement/grab-2.png" id="131"]
+[ext_resource type="Texture2D" uid="uid://hxm08m7ed840" path="res://assets/sprites/goku/classic/movement/grab-1.png" id="132"]
+[ext_resource type="Texture2D" uid="uid://eop0mcyy8xf1" path="res://assets/sprites/goku/classic/attack/kamehameha/right/3.png" id="133"]
+[ext_resource type="Texture2D" uid="uid://cs5hxdvultkqo" path="res://assets/sprites/goku/classic/attack/kamehameha/up/1.png" id="134"]
+[ext_resource type="Texture2D" uid="uid://dq4sofaoqr13f" path="res://assets/sprites/goku/classic/attack/kamehameha/down/2.png" id="135"]
+[ext_resource type="Texture2D" uid="uid://4tusnb4bsr17" path="res://assets/sprites/goku/classic/attack/kamehameha/down/1.png" id="136"]
+[ext_resource type="Texture2D" uid="uid://cjl42lw82nt76" path="res://assets/sprites/goku/classic/attack/kamehameha/up/3.png" id="137"]
+[ext_resource type="Texture2D" uid="uid://lxypso1w7xpk" path="res://assets/sprites/goku/classic/attack/kamehameha/right/2.png" id="138"]
+[ext_resource type="Texture2D" uid="uid://dij2ftw1ahpm8" path="res://assets/sprites/goku/classic/attack/kamehameha/right/1.png" id="139"]
+[ext_resource type="Texture2D" uid="uid://bvnuqou3bqcn3" path="res://assets/sprites/goku/classic/attack/kamehameha/up/2.png" id="140"]
+[ext_resource type="Texture2D" uid="uid://ctip3d3efg763" path="res://assets/sprites/goku/classic/attack/kamehameha/down/3.png" id="141"]
+[ext_resource type="Texture2D" uid="uid://ba0sf2u5ugtv0" path="res://assets/sprites/goku/classic/attack/kamehameha/up/4.png" id="145"]
+[ext_resource type="Texture2D" uid="uid://buro0lux1026g" path="res://assets/sprites/goku/classic/attack/kamehameha/right/4.png" id="146"]
+[ext_resource type="Texture2D" uid="uid://dr4acocnlihfk" path="res://assets/sprites/goku/classic/attack/kamehameha/down/4.png" id="148"]
+[ext_resource type="Texture2D" uid="uid://yp0n727fmaxy" path="res://assets/sprites/goku/classic/movement/teleport/right/1.png" id="149"]
+[ext_resource type="Texture2D" uid="uid://ca8l7615eaw2g" path="res://assets/sprites/goku/classic/movement/teleport/down/1.png" id="150"]
+[ext_resource type="Texture2D" uid="uid://p6hqq6oa4tle" path="res://assets/sprites/goku/classic/movement/teleport/up/1.png" id="151"]
+[ext_resource type="Texture2D" uid="uid://dqn6jhhaoguqc" path="res://assets/sprites/goku/classic/movement/teleport/down/3.png" id="152"]
+[ext_resource type="Texture2D" uid="uid://d15w18qax4m78" path="res://assets/sprites/goku/classic/movement/teleport/right/3.png" id="153"]
+[ext_resource type="Texture2D" uid="uid://c2fp58w63tji2" path="res://assets/sprites/goku/classic/movement/teleport/up/2.png" id="154"]
+[ext_resource type="Texture2D" uid="uid://bcricr0qkqwsl" path="res://assets/sprites/goku/classic/movement/teleport/down/2.png" id="155"]
+[ext_resource type="Texture2D" uid="uid://c5aelpnsv4378" path="res://assets/sprites/goku/classic/movement/teleport/up/3.png" id="157"]
+[ext_resource type="Texture2D" uid="uid://dskotvknrf6ud" path="res://assets/sprites/goku/classic/movement/teleport/right/2.png" id="160"]
+[ext_resource type="Texture2D" uid="uid://3vg3o0pcari0" path="res://assets/sprites/goku/classic/surprise/2.png" id="161"]
+[ext_resource type="Texture2D" uid="uid://3pcuyt7e6enm" path="res://assets/sprites/goku/classic/surprise/3.png" id="162"]
+[ext_resource type="Texture2D" uid="uid://dowb4r3gdo255" path="res://assets/sprites/goku/classic/surprise/1.png" id="163"]
+[ext_resource type="Texture2D" uid="uid://cuwn520lc8j51" path="res://assets/sprites/goku/classic/surprise/4.png" id="164"]
+[ext_resource type="Texture2D" uid="uid://bbh35g0se2m1j" path="res://assets/sprites/goku/classic/movement/map-transition/down/1.png" id="165"]
+[ext_resource type="Texture2D" uid="uid://dpv2hhqiikvcd" path="res://assets/sprites/goku/classic/movement/map-transition/down/4.png" id="168"]
+[ext_resource type="Texture2D" uid="uid://yxefdp2m7y2r" path="res://assets/sprites/goku/classic/movement/map-transition/right/4.png" id="170"]
+[ext_resource type="Texture2D" uid="uid://rjmv578t67d2" path="res://assets/sprites/goku/classic/movement/map-transition/up/4.png" id="171"]
+[ext_resource type="Texture2D" uid="uid://bcgmt46qttx66" path="res://assets/sprites/goku/classic/movement/map-transition/right/2.png" id="172"]
+[ext_resource type="Texture2D" uid="uid://coyv0bu4cmyof" path="res://assets/sprites/goku/classic/movement/map-transition/right/1.png" id="173"]
+[ext_resource type="Texture2D" uid="uid://mb0igy5iv7nk" path="res://assets/sprites/goku/classic/movement/map-transition/up/2.png" id="174"]
+[ext_resource type="Texture2D" uid="uid://c5ddoh11k0res" path="res://assets/sprites/goku/classic/movement/map-transition/right/3.png" id="175"]
+[ext_resource type="Texture2D" uid="uid://dxmdvge0ha2w1" path="res://assets/sprites/goku/classic/movement/map-transition/down/2.png" id="177"]
+[ext_resource type="Texture2D" uid="uid://b7g2m7hyga542" path="res://assets/sprites/goku/classic/movement/map-transition/up/1.png" id="178"]
+[ext_resource type="Texture2D" uid="uid://bruildavv5cqj" path="res://assets/sprites/goku/classic/movement/map-transition/up/3.png" id="179"]
+[ext_resource type="Texture2D" uid="uid://b5bd8gmqobgtp" path="res://assets/sprites/goku/classic/movement/map-transition/down/3.png" id="180"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}],
+"loop": false,
+"name": &"afk",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22")
+}],
+"loop": true,
+"name": &"afk-2",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("59")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57")
+}],
+"loop": false,
+"name": &"attack-1-down",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66")
+}],
+"loop": false,
+"name": &"attack-1-right",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91")
+}],
+"loop": false,
+"name": &"attack-1-up",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56")
+}],
+"loop": false,
+"name": &"attack-2-down",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("90")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72")
+}],
+"loop": false,
+"name": &"attack-2-right",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79")
+}],
+"loop": false,
+"name": &"attack-2-up",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89")
+}],
+"loop": false,
+"name": &"attack-3-right",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}],
+"loop": true,
+"name": &"cutscene-stand-down",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}],
+"loop": true,
+"name": &"cutscene-stand-right",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12")
+}],
+"loop": false,
+"name": &"cutscene-stand-up",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("115")
+}],
+"loop": false,
+"name": &"defense-down",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("116")
+}],
+"loop": false,
+"name": &"defense-right",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("117")
+}],
+"loop": false,
+"name": &"defense-up",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("165")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168")
+}],
+"loop": false,
+"name": &"enter-map-down",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("173")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170")
+}],
+"loop": false,
+"name": &"enter-map-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("178")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171")
+}],
+"loop": false,
+"name": &"enter-map-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("103")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87")
+}],
+"loop": true,
+"name": &"fly-cn2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("100")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95")
+}],
+"loop": true,
+"name": &"fly-cn4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("97")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99")
+}],
+"loop": true,
+"name": &"fly-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("102")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92")
+}],
+"loop": true,
+"name": &"fly-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("132")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131")
+}],
+"loop": false,
+"name": &"grab",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82")
+}],
+"loop": true,
+"name": &"halo",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("104")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130")
+}, {
+"duration": 2.0,
+"texture": ExtResource("21")
+}],
+"loop": false,
+"name": &"hit-down",
+"speed": 13.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("110")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122")
+}, {
+"duration": 2.0,
+"texture": ExtResource("11")
+}],
+"loop": false,
+"name": &"hit-right",
+"speed": 13.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("118")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127")
+}, {
+"duration": 2.0,
+"texture": ExtResource("12")
+}],
+"loop": false,
+"name": &"hit-up",
+"speed": 13.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("104")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130")
+}],
+"loop": false,
+"name": &"hit-wall-down",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("110")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122")
+}],
+"loop": false,
+"name": &"hit-wall-right",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("118")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127")
+}],
+"loop": false,
+"name": &"hit-wall-up",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("148")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44")
+}],
+"loop": true,
+"name": &"kame-2-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55")
+}],
+"loop": true,
+"name": &"kame-2-down-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62")
+}],
+"loop": true,
+"name": &"kame-2-left-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81")
+}],
+"loop": true,
+"name": &"kame-2-left-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("146")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43")
+}],
+"loop": true,
+"name": &"kame-2-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63")
+}],
+"loop": true,
+"name": &"kame-2-right-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78")
+}],
+"loop": true,
+"name": &"kame-2-right-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("145")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49")
+}],
+"loop": true,
+"name": &"kame-2-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74")
+}],
+"loop": true,
+"name": &"kame-2-up-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("136")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135")
+}],
+"loop": false,
+"name": &"kame-down",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("139")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133")
+}],
+"loop": false,
+"name": &"kame-right",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("134")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137")
+}],
+"loop": false,
+"name": &"kame-up",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37")
+}],
+"loop": false,
+"name": &"ki-blast-1-down",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39")
+}],
+"loop": false,
+"name": &"ki-blast-1-right",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40")
+}],
+"loop": false,
+"name": &"ki-blast-1-up",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47")
+}],
+"loop": false,
+"name": &"ki-blast-2-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41")
+}],
+"loop": false,
+"name": &"ki-blast-2-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45")
+}],
+"loop": false,
+"name": &"ki-blast-2-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37")
+}],
+"loop": false,
+"name": &"ki-blast-3-down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39")
+}],
+"loop": false,
+"name": &"ki-blast-3-right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40")
+}],
+"loop": false,
+"name": &"ki-blast-3-up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("163")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164")
+}],
+"loop": false,
+"name": &"level-up",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23")
+}],
+"loop": true,
+"name": &"run-down",
+"speed": 7.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29")
+}],
+"loop": true,
+"name": &"run-right",
+"speed": 7.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33")
+}],
+"loop": true,
+"name": &"run-up",
+"speed": 7.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("150")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155")
+}],
+"loop": false,
+"name": &"short-teleport-down",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("149")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160")
+}],
+"loop": false,
+"name": &"short-teleport-right",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("151")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154")
+}],
+"loop": false,
+"name": &"short-teleport-up",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 7.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 7.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 7.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 4.0,
+"texture": ExtResource("21")
+}],
+"loop": false,
+"name": &"stand-down",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 7.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 7.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 7.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 4.0,
+"texture": ExtResource("11")
+}],
+"loop": false,
+"name": &"stand-right",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 36.0,
+"texture": ExtResource("12")
+}],
+"loop": false,
+"name": &"stand-up",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("163")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164")
+}],
+"loop": false,
+"name": &"suprise-down",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9")
+}],
+"loop": true,
+"name": &"walk-down",
+"speed": 7.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
+}],
+"loop": true,
+"name": &"walk-right",
+"speed": 7.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}],
+"loop": true,
+"name": &"walk-up",
+"speed": 7.5
+}]
+
+[node name="Sprite" type="AnimatedSprite2D" unique_id=575679977]
+sprite_frames = SubResource("1")
+animation = &"stand-down"
+offset = Vector2(0, -16)

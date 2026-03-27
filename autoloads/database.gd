@@ -6,8 +6,8 @@ static func get_new_save_file() -> SaveFile:
 static func get_updates() -> Dictionary: 
 	return {
 	  '1': {
-		'Kami's Lookout': {
-		  'Korin's Tower': {
+		'Kami\'s Lookout': {
+		  'Korin\'s Tower': {
 			'Actual Event': 0,
 			'Event Occurring': false,
 			'Items': {},
@@ -35,7 +35,7 @@ static func get_areas() ->  Dictionary:
 				'Items': {},
 				'Npcs': {}
 			},
-			'Grandpa Gohan's House': {
+			'Grandpa Gohan\'s House': {
 				'Event Occurring': false,
 				'Actual Event': 0,
 				'Items': {},
@@ -53,13 +53,13 @@ static func get_areas() ->  Dictionary:
 				'Items': {},
 				'Npcs': {}
 			},
-			'Gohan's Room' : {
+			'Gohan\'s Room' : {
 				'Event Occurring': false,
 				'Actual Event': 0,
 				'Items': {},
 				'Npcs': {}
 			},
-			'Goku's Room': {
+			'Goku\'s Room': {
 				'Event Occurring': false,
 				'Actual Event': 0,
 				'Items': {},
@@ -98,7 +98,7 @@ static func get_areas() ->  Dictionary:
 				'Npcs': {}
 			}
 		},
-		'Master Roshi's Island': {
+		'Master Roshi\'s Island': {
 			'Kame House' : {
 				'Event Occurring': false,
 				'Actual Event': 0,
@@ -119,7 +119,7 @@ static func get_areas() ->  Dictionary:
 			}
 		},
 		'Northern Wilderness': {
-			'Raditz's Landing Site' : {
+			'Raditz\'s Landing Site' : {
 				'Event Occurring': true,
 				'Actual Event': 0,
 				'Items': {},
@@ -146,8 +146,8 @@ static func get_areas() ->  Dictionary:
 				'Npcs': {}
 			}
 		},
-		'Kami's Lookout': {
-			'Kami's Lookout' : {
+		'Kami\'s Lookout': {
+			'Kami\'s Lookout' : {
 				'Event Occurring': false,
 				'Actual Event': 0,
 				'Items': {},
@@ -177,7 +177,7 @@ static func get_areas() ->  Dictionary:
 				'Items': {},
 				'Npcs': {}
 			},
-			'Korin's Tower' : {
+			'Korin\'s Tower' : {
 				'Event Occurring': false,
 				'Actual Event': 0,
 				'Items': {},
@@ -191,7 +191,7 @@ static func get_areas() ->  Dictionary:
 			}
 		},
 		'Other World': {
-			'North Kai's Planet' : {
+			'North Kai\'s Planet' : {
 				'Event Occurring': false,
 				'Actual Event': 0,
 				'Items': {},
@@ -203,9 +203,9 @@ static func get_areas() ->  Dictionary:
 static func get_world_map() -> Dictionary:
 	return {
 		'East District 439': { 'Unlocked' : true, 'Goal': true },
-		'Master Roshi's Island': { 'Unlocked' : false, 'Goal': false },
+		'Master Roshi\'s Island': { 'Unlocked' : false, 'Goal': false },
 		'Northern Wilderness': { 'Unlocked' : false, 'Goal': false },
-		'Kami's Lookout': { 'Unlocked' : true, 'Goal': false },
+		'Kami\'s Lookout': { 'Unlocked' : true, 'Goal': false },
 		'West City': { 'Unlocked' : true, 'Goal': false },
 	}
 

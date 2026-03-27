@@ -15,7 +15,8 @@ func _ready():
 	state_timer.connect('set_time_left', set_time_left)
 
 func _physics_process(delta: float) -> void:
-	machine_state.physics_process(delta)
+	if machine_state:
+		machine_state.physics_process(delta)
 	
 func set_direction(new_direction: int) -> void:
 	pass

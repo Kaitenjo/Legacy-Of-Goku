@@ -42,26 +42,6 @@ var shield_activated := false
 var shield_scene := preload(Paths.SHIELD)
 var shield: AnimatedSprite2D
 
-#HANDLER REGION
-func _ready() -> void:
-	set_zoom_camera()
-	Events.connect('update_zoom_camera', set_zoom_camera)
-	#Events.connect('hit', hit)
-	#Events.connect('level_up_animation', level_up_animation)
-	Events.connect('get_item', get_item)
-	Events.connect('send_experience_to_player', update_experience)
-	Events.connect('item_used', item_used)
-	Events.connect('grab_health_drop', grab_health_drop)
-	Events.connect('grab_energy_drop', grab_energy_drop)
-	#machine_state.connect('state_changed', state_timer, 'state_changed') 
-	for timer in [state_timer, energy_regen_timer, defense_regeneration_timer]:
-		add_child(timer)
-	energy_regen_timer.wait_time = 5
-	energy_regen_timer.one_shot = true
-	defense_regeneration_timer.wait_time = 3
-	defense_regeneration_timer.one_shot = true
-	energy_regeneration()
-
 func load_character(character_name: String, character_data: CharacterDTO):
 	self.character_name = character_name
 	sprite_name = character_data.sprite
@@ -81,12 +61,30 @@ func load_character(character_name: String, character_data: CharacterDTO):
 func init():
 	machine_state = states_manager
 	machine_state.init(self)
+	set_zoom_camera()
+	Events.connect('update_zoom_camera', set_zoom_camera)
+	#Events.connect('hit', hit)
+	#Events.connect('level_up_animation', level_up_animation)
+	Events.connect('get_item', get_item)
+	Events.connect('send_experience_to_player', update_experience)
+	Events.connect('item_used', item_used)
+	Events.connect('grab_health_drop', grab_health_drop)
+	Events.connect('grab_energy_drop', grab_energy_drop)
+	#machine_state.connect('state_changed', state_timer, 'state_changed') 
+	for timer in [state_timer, energy_regen_timer, defense_regeneration_timer]:
+		add_child(timer)
+	energy_regen_timer.wait_time = 5
+	energy_regen_timer.one_shot = true
+	defense_regeneration_timer.wait_time = 3
+	defense_regeneration_timer.one_shot = true
+	energy_regeneration()
 	
 func reset():
 	sprite.queue_free()
 	
 func _input(event: InputEvent) -> void:
-	machine_state.input(event)
+	if machine_state:
+		machine_state.input(event)
 
 func disable():
 	set_process_input(false)
