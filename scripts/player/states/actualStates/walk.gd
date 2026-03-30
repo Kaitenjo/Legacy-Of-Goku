@@ -1,13 +1,13 @@
 extends MoveState
 
 func _ready():
-	animation = 'Walk'
+	self.animation = 'walk'
 	
 func input(_event: InputEvent) -> int:
-	if Input.is_action_pressed('running'):
+	if Input.is_action_pressed('shift'):
 		return State.Run
 		
-	return check_player_input()
+	return self.check_player_input()
 
 func initialize_state():
-	vector_increase = 5000
+	self.velocity = 5000

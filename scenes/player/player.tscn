@@ -1,22 +1,21 @@
 [gd_scene format=3 uid="uid://dvsbcou1r1iy2"]
 
-[ext_resource type="Script" uid="uid://dlr1uc3tj650a" path="res://scripts/player/states/actualStates/walk.gd" id="1"]
-[ext_resource type="Script" uid="uid://br3it46ftph6o" path="res://scripts/player/states/actualStates/idle.gd" id="2"]
-[ext_resource type="Script" uid="uid://cscakqs0ljfo6" path="res://scripts/player/states/state-manager.gd" id="3"]
-[ext_resource type="Script" uid="uid://ch48a146dek8j" path="res://scripts/player/base-player.gd" id="4"]
-[ext_resource type="Script" uid="uid://bigpw5dkxhbrf" path="res://scripts/player/states/actualStates/base-attack.gd" id="5"]
-[ext_resource type="Script" uid="uid://doty6dfekmduw" path="res://scripts/player/states/actualStates/ki-blast.gd" id="6"]
-[ext_resource type="Script" uid="uid://c2h4804f1gt0x" path="res://scripts/player/states/actualStates/fast-attack.gd" id="7"]
-[ext_resource type="Script" uid="uid://3qvl1qx7a1sp" path="res://scripts/player/states/actualStates/dead.gd" id="8"]
-[ext_resource type="Script" uid="uid://bdomwc0lw1qj4" path="res://scripts/player/states/actualStates/run.gd" id="9"]
-[ext_resource type="Script" uid="uid://dnamhlob4y8gs" path="res://scripts/player/states/actualStates/teleport.gd" id="10"]
-[ext_resource type="Script" uid="uid://j2ygk5j56omy" path="res://scripts/player/states/actualStates/hit-wall.gd" id="11"]
-[ext_resource type="Script" uid="uid://5b76xrvyo575" path="res://scripts/player/states/actualStates/hit.gd" id="12"]
-[ext_resource type="Script" uid="uid://cir28jltsdra0" path="res://scripts/player/states/actualStates/change-map.gd" id="13"]
+[ext_resource type="Script" uid="uid://crhhrj8kappi6" path="res://scripts/player/states/actualStates/walk.gd" id="1"]
+[ext_resource type="Script" uid="uid://yqonheq8p7o5" path="res://scripts/player/states/actualStates/idle.gd" id="2"]
+[ext_resource type="Script" uid="uid://bf83uolr34s6v" path="res://scripts/player/states/state-manager.gd" id="3"]
+[ext_resource type="Script" uid="uid://deu8grlsof2xx" path="res://scenes/player/base-player.gd" id="4"]
+[ext_resource type="Script" uid="uid://dw5h2k2m7bhpr" path="res://scripts/player/states/actualStates/base-attack.gd" id="5"]
+[ext_resource type="Script" uid="uid://c6jrh0dug68sl" path="res://scripts/player/states/actualStates/ki-blast.gd" id="6"]
+[ext_resource type="Script" uid="uid://duskyb6h8c44r" path="res://scripts/player/states/actualStates/fast-attack.gd" id="7"]
+[ext_resource type="Script" uid="uid://rs0xm1n3h6ur" path="res://scripts/player/states/actualStates/dead.gd" id="8"]
+[ext_resource type="Script" uid="uid://cv1na3xg6jwrt" path="res://scripts/player/states/actualStates/run.gd" id="9"]
+[ext_resource type="Script" uid="uid://ckxicma7cxpmk" path="res://scripts/player/states/actualStates/teleport.gd" id="10"]
+[ext_resource type="Script" uid="uid://bi0mo84mdsvol" path="res://scripts/player/states/actualStates/hit-wall.gd" id="11"]
+[ext_resource type="Script" uid="uid://dj7x1u0j2gg44" path="res://scripts/player/states/actualStates/hit.gd" id="12"]
+[ext_resource type="Script" uid="uid://bgsubsob6r0y2" path="res://scripts/player/states/actualStates/change-map.gd" id="13"]
 [ext_resource type="PackedScene" uid="uid://c6bh5j153qv6i" path="res://scenes/common/punch.tscn" id="14"]
-[ext_resource type="Script" uid="uid://dxjs10hy0moms" path="res://scripts/player/states/actualStates/fly-change-map.gd" id="15"]
-[ext_resource type="Script" uid="uid://djw2yv4dr0dxs" path="res://scripts/player/states/actualStates/defense.gd" id="16"]
-[ext_resource type="Script" uid="uid://d31vqbf850j2e" path="res://scripts/player/states/actualStates/shield.gd" id="17"]
+[ext_resource type="Script" uid="uid://c8ow66yruosid" path="res://scripts/player/states/actualStates/fly-change-map.gd" id="15"]
+[ext_resource type="Script" uid="uid://bogpuxje4j4q1" path="res://scripts/player/states/actualStates/shield.gd" id="17"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(7.8, 2)
@@ -57,7 +56,7 @@ script = ExtResource("9")
 script = ExtResource("5")
 
 [node name="Defense" type="Node" parent="StatesManager" unique_id=205067479]
-script = ExtResource("16")
+script = ExtResource("17")
 
 [node name="Shield" type="Node" parent="StatesManager" unique_id=130285532]
 script = ExtResource("17")

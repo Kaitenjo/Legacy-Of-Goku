@@ -5,24 +5,24 @@ var vector_direction := Vector2()
 var increase := 50
 
 func _ready():
-	animation = 'Walk'
+	self.animation = 'walk'
 	
 func input(event: InputEvent) -> int:
 	return State.Null
 
 func physics_process(delta: float) -> int:
-	if completed:
+	if self.completed:
 		return State.Idle
 		
-	player.move_and_collide(vector_direction * increase * delta)
+	self.player.move_and_collide(self.vector_direction * self.increase * delta)
 	return State.Null
 
 func setup(direction: int) -> void:
-	player.direction = direction
+	self.player.direction = direction
 	
 func initialize_state() -> void:
-	vector_direction = Direction.get_vector(player.direction)
+	self.vector_direction = Direction.get_vector(self.player.direction)
 
-#func completed() -> void:
-	#completed = true
-	#play_animation('Stand')
+func complete() -> void:
+	self.completed = true
+	self.play_animation('idle')

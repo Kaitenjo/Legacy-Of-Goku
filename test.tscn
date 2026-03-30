@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://m0svox7i1g2a"]
 
 [ext_resource type="PackedScene" uid="uid://ktly0xh81wb7" path="res://scenes/animals/squirrel/squirrel.tscn" id="1_8uh7m"]
-[ext_resource type="Script" uid="uid://b1vxk36eiu0de" path="res://test.gd" id="1_ppyta"]
+[ext_resource type="Script" uid="uid://bahs7nmk0ksyy" path="res://test.gd" id="1_ppyta"]
 [ext_resource type="PackedScene" uid="uid://tmupwr6v1okh" path="res://scenes/animals/butterfly/butterfly.tscn" id="2_6uqi0"]
 
 [node name="Test" type="Node2D" unique_id=188397439]

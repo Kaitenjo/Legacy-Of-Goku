@@ -4,6 +4,5 @@ extends Node2D
 func _ready() -> void:
 	var player_scene: PackedScene = preload(Paths.PLAYER)
 	var player: Player = player_scene.instantiate()
+	player.init('goku', CharacterDTO.new(true, 'classic', 5, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100))
 	add_child(player)
-	player.load_character('Goku', CharacterDTO.new(true, 'classic', 5, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100))
-	player.init()

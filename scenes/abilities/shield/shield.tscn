@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://md0e00ioolwl"]
+
+[ext_resource type="Texture2D" uid="uid://b74ux7xtqnikg" path="res://assets/sprites/abilities/shield/2.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://b611jqjjo3faj" path="res://assets/sprites/abilities/shield/1.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dxw7vdy3g76ea" path="res://assets/sprites/abilities/shield/7.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dvobgrtxi36yc" path="res://assets/sprites/abilities/shield/6.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dkfgqetr8hodw" path="res://assets/sprites/abilities/shield/5.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://ceoduy52kan85" path="res://assets/sprites/abilities/shield/3.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cx76qytcksbo4" path="res://assets/sprites/abilities/shield/4.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bhfkw3y446wpm" path="res://assets/sprites/abilities/shield/0.png" id="8"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}],
+"loop": false,
+"name": &"activating",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}],
+"loop": true,
+"name": &"active",
+"speed": 8.0
+}]
+
+[node name="Shield" type="AnimatedSprite2D" unique_id=59881532]
+modulate = Color(1, 1, 1, 0.670588)
+sprite_frames = SubResource("1")
+animation = &"activating"
+offset = Vector2(0, -16)

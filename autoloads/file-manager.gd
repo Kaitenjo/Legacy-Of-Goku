@@ -1,5 +1,4 @@
 extends Node
-class_name FileManager
 
 static func init() -> void:
 	var dir := DirAccess.open('res://')
@@ -23,7 +22,7 @@ static func create_file(path: String, data: Dictionary) -> void:
 static func create_save_file(path: String, data: Dictionary) -> void:
 	create_file(path + Paths.SAVE_EXTENTION, data)
 
-static func create_settings_file(data: SettingsDTO) -> void:
+static func create_settings_file(data: SettingsData) -> void:
 	var mapped_data: Dictionary = {
 		'Audio': {
 			'Music': data.audio.music,
@@ -89,10 +88,10 @@ static func load_world_map_file() -> Dictionary:
 static func load_save_file(path: String) -> Dictionary:
 	return load_file(path + Paths.SAVE_EXTENTION)
 	
-static func load_settings_file() -> SettingsDTO:
+static func load_settings_file() -> SettingsData:
 	var data = load_file(Paths.SETTINGS + Paths.CONFIG_EXTENTION)
 	var audio: Dictionary = data.get('Audio')
-	return SettingsDTO.new(
+	return SettingsData.new(
 		audio.get('Music'), 
 		audio.get('Sfx'), 
 		data.get('Text Speed'), 
@@ -160,7 +159,7 @@ static func update_save_file(path: String, data: Dictionary) -> void:
 	delete_save_file(path)
 	create_save_file(path, data)
 
-static func update_settings_file(data: SettingsDTO) -> void:
+static func update_settings_file(data: SettingsData) -> void:
 	delete_settings_file()
 	create_settings_file(data)
 

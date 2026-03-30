@@ -10,13 +10,13 @@ func input(event: InputEvent) -> int:
 	return State.Null
 
 func physics_process(delta) -> int:
-	if not player.stats.energy:
+	if not self.player.stats.energy:
 		return State.Defense
 	
 	return State.Null
 	
 func enter() -> void:
-	player.activate_shield()
+	self.player.activate_shield()
 
 func exit() -> void:
-	player.deactivate_shield()
+	self.player.deactivate_shield()

@@ -14,7 +14,7 @@ signal start_level_up
 signal check_open_level_up(val)
 signal open_interface(type, data)
 signal check_collision(vector)
-signal checked_collision(position)
+signal checked_collision(position: Vector2)
 signal is_colliding
 signal death
 signal enable_player

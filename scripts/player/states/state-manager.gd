@@ -1,25 +1,25 @@
 extends Node
+class_name StatesManager
 
-var states: Dictionary = {}
+var states := {}
 var current_state: PlayerBaseState
-const player_base_states: int = 14
+const player_base_states := 14
 var player: Player
 
 signal state_changed
 
 func init(player: Player) -> void:
-	load_Base_states()
+	self.load_Base_states()
 
-	for child in get_children():
+	for child in self.get_children():
 		child.player = player
 
 	self.player = player
 	
-	change_state(PlayerBaseState.State.Idle)
+	self.change_state(PlayerBaseState.State.Idle)
 
-#CALLED ONCE IN THE READY ROOT
 func load_Base_states():
-	var temp = {
+	var temp := {
 		PlayerBaseState.State.Null: null,
 		PlayerBaseState.State.Idle: $Idle,
 		PlayerBaseState.State.Walk: $Walk,
@@ -38,45 +38,45 @@ func load_Base_states():
 	}
 	
 	for key in temp:
-		states[key] = temp[key]
+		self.states[key] = temp[key]
 	
 func load_character_states(player: Player, character_name: String, character_states: Array) -> void:
-	for i in range(player_base_states, get_children().size()): remove_child(get_child(i))
-	var new_nodes: Array = create_characters_states(player, character_name, character_states)
-	for node in new_nodes: add_child(node)
+	for i in range(self.player_base_states, self.get_children().size()): self.remove_child(self.get_child(i))
+	var new_nodes: Array = self.create_characters_states(player, character_name, character_states)
+	for node in new_nodes: self.add_child(node)
 	
-	for key in states.keys(): 
-		if key > player_base_states:
-			states.erase(key)
+	for key in self.states.keys(): 
+		if key > self.player_base_states:
+			self.states.erase(key)
 			
-	for i in range(0, new_nodes.size()): states[character_states[i].action.state] = new_nodes[i]
+	for i in range(0, new_nodes.size()): self.states[character_states[i].action.state] = new_nodes[i]
 		
-func create_characters_states(player: Player, character_name: String, character_states: Array) -> Array:
-	var new_nodes: Array = []
+func create_characters_states(player: Player, character_name: String, character_states: Array) -> Array[BaseState]:
+	var new_nodes: Array[BaseState] = []
 	
 	for state in character_states:
-		var new_node: PlayerBaseState = PlayerBaseState.new()
-		new_node.script = load(Paths.PLAYER_STATES + character_name + '/' + state.node_script + '.gd')
+		var new_node := PlayerBaseState.new()
+		new_node.script = load(Paths.PLAYER_STATES + character_name + '/' + state.node_script + Paths.SCRIPT_EXTENSION)
 		new_node.player = player
 		new_nodes.append(new_node)
 	
 	return new_nodes
 	
 func physics_process(delta: float) -> void:
-	var new_state = current_state.physics_process(delta)
-	change_state(new_state)
+	var new_state = self.current_state.physics_process(delta)
+	self.change_state(new_state)
 
 func input(event: InputEvent) -> void:
-	var new_state = current_state.input(event)
-	change_state(new_state)
+	var new_state = self.current_state.input(event)
+	self.change_state(new_state)
 
 func change_state(new_state: int) -> void:
 	if not new_state:
 		return
 	
-	if current_state:
-		current_state.exit()
+	if self.current_state:
+		self.current_state.exit()
 	
-	player.state_timer.state_changed()
-	current_state = states[new_state]
-	current_state.enter()
+	self.player.state_timer.state_changed()
+	self.current_state = self.states[new_state]
+	self.current_state.enter()

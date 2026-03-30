@@ -16,28 +16,73 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 
 [autoload]
 
-Paths="*uid://dj6ppspgavttg"
-Events="*uid://cwxwoaspy1mds"
-Signals="*uid://vxrxyifixfks"
-Utility="*uid://bwasleam4ln1m"
-GameDB="*uid://cm63hdjht3k6l"
-FilesSystemManager="*uid://daej0fgujxu0c"
-Settings="*uid://b7qsmtem7r4jl"
+Paths="*uid://bdu74cfg366ag"
+Events="*uid://dole72wgt08v3"
+Signals="*uid://cmqxr6pe7udwq"
+Utility="*uid://dy3vnqtd3k6tr"
+GameDB="*uid://kajydgrhvclp"
+FilesSystemManager="*uid://bsio4ijcd2jq4"
+Settings="*uid://d0hccohj16yv5"
 AudioManager="*uid://o23xe176mmpp"
-UpdateManager="*uid://ct623imih8bl8"
-ComputerInfo="*uid://crj4qidyp4ede"
+UpdateManager="*uid://brnwmxphrmaoe"
+ComputerInfo="*uid://b465iulgxaiu6"
+CharactersStates="*uid://bcoej6s2oaepv"
 
 [display]
 
 window/size/viewport_width=3840
 window/size/viewport_height=2160
 window/size/mode=3
+window/size/initial_position_type=3
 window/canvas_textures/default_texture_filter=1
 
 [editor]
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[input]
+
+ki_blast={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":75,"key_label":0,"unicode":107,"location":0,"echo":false,"script":null)
+]
+}
+teleport={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"location":0,"echo":false,"script":null)
+]
+}
+ghost_attack={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":72,"key_label":0,"unicode":104,"location":0,"echo":false,"script":null)
+]
+}
+special_attack_1={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":76,"key_label":0,"unicode":108,"location":0,"echo":false,"script":null)
+]
+}
+guard={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":90,"key_label":0,"unicode":122,"location":0,"echo":false,"script":null)
+]
+}
+shield={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":88,"key_label":0,"unicode":120,"location":0,"echo":false,"script":null)
+]
+}
+base_attack={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":74,"key_label":0,"unicode":106,"location":0,"echo":false,"script":null)
+]
+}
+shift={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194325,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
 
 [physics]
 

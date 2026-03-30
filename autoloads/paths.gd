@@ -15,18 +15,25 @@ const SAVE_EXTENTION := '.save'
 const CONFIG_EXTENTION := '.cfg'
 const UPDATE_EXTENTION := '.txt'
 const WAV_EXTENTION := '.wav'
+const SCENE_EXTENSION := '.tscn'
+const SCRIPT_EXTENSION := '.gd'
 #END REGION FILES
 
 #REGION SCENES
+const SCENES := 'res://scenes/'
+const ABILITIES := SCENES + 'abilities/'
+const KI_BLAST := ABILITIES + 'ki-blast/ki-blast' + SCENE_EXTENSION 
+const KAMEHAMEHA := ABILITIES + 'kamehameha/kamehameha' + SCENE_EXTENSION 
+const SHIELD := ABILITIES + 'shield/shield' + SCENE_EXTENSION
+const PLAYER := SCENES + 'player/player' + SCENE_EXTENSION
+const SPRITES := SCENES + 'sprites/'
+
+
 const ROOT := 'res://Scenes/Control/Root.tscn'
 const ENTITIES_FOLDER = 'res://Scenes/Entities/'
 const GHOST_ATTACK := ENTITIES_FOLDER + 'Abilities/Ghost.tscn'
-const KAMEHAMEHA := ENTITIES_FOLDER + 'Abilities/Kamehameha.tscn'
 const SPECIAL_BEAM_CANNON := ENTITIES_FOLDER + 'Abilities/SpecialBeamCannon.tscn'
 const FINAL_FLASH := ENTITIES_FOLDER + 'Abilities/FinalFlash.tscn'
-const KI_BLAST := ENTITIES_FOLDER + 'Abilities/KiBlast.tscn'
-#const SHIELD := ENTITIES_FOLDER + 'Abilities/Shield.tscn'
-const SHIELD := 'res://scenes/attacks/shield/shield.tscn'
 const CUTSCENE_CAMERA = ENTITIES_FOLDER + 'Maps/DynamicCameraCutScenes.tscn'
 const CUTSCENE_CHARACTERS = ENTITIES_FOLDER + 'BaseCharacterCutScene.tscn'
 const ENEMY = ENTITIES_FOLDER + 'BaseEnemy.tscn'
@@ -35,9 +42,8 @@ const ITEM = ENTITIES_FOLDER + 'Item.tscn'
 const MAPS_FOLDER := ENTITIES_FOLDER + 'Maps/'
 const WORLD_MAP := MAPS_FOLDER + 'WorldMap/WorldMap.tscn'
 #const PLAYER := ENTITIES_FOLDER + 'BasePlayer.tscn'
-const PLAYER := 'res://scenes/player/player.tscn'
 const ROCK_DROPS := ENTITIES_FOLDER + 'Rocks/'
-const SPRITES := ENTITIES_FOLDER + 'Sprites/'
+#const SPRITES := ENTITIES_FOLDER + 'Sprites/'
 const ATTACK_BALL := SPRITES + 'AttackBall.tscn'
 const EXPLOSION := SPRITES + 'ExplosionEffect.tscn'
 const SPRITE_WORLD_MAP_FOLDER := SPRITES + 'WorldMap/'
@@ -110,12 +116,13 @@ const KEY_TO_SCENE := {
 	}
 }
 
-#REGION SCRIPTS
+#REGION SCRIPT
+const SCRIPTS = 'res://scripts/'
 const ATTACK_AREA_SCRIPT := 'res://Scripts/Entities/Abilities/AttackArea.gd'
 const CHARACTERS_SCRIPTS := 'res://Scripts/Entities/Characters/'
 const ENEMIES_SCRIPTS := 'res://Scripts/Entities/Enemies/Ai/'
 const ENEMIES_STATES := 'res://Scripts/Entities/Enemies/States/ActualStates/Specifics/'
-const PLAYER_STATES := 'res://Scripts/Entities/Player/States/'
+const PLAYER_STATES := SCRIPTS + 'player/states/'
 
 #REGION ASSETS
 const COMBACT_AUDIOS := 'res://Audios/Combact/'

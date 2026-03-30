@@ -188,7 +188,7 @@ animations = [{
 "texture": ExtResource("22")
 }],
 "loop": true,
-"name": &"afk-2",
+"name": &"afk_2",
 "speed": 1.0
 }, {
 "frames": [{
@@ -205,7 +205,7 @@ animations = [{
 "texture": ExtResource("57")
 }],
 "loop": false,
-"name": &"attack-1-down",
+"name": &"attack_1_down",
 "speed": 15.0
 }, {
 "frames": [{
@@ -222,7 +222,7 @@ animations = [{
 "texture": ExtResource("66")
 }],
 "loop": false,
-"name": &"attack-1-right",
+"name": &"attack_1_right",
 "speed": 15.0
 }, {
 "frames": [{
@@ -239,7 +239,7 @@ animations = [{
 "texture": ExtResource("91")
 }],
 "loop": false,
-"name": &"attack-1-up",
+"name": &"attack_1_up",
 "speed": 15.0
 }, {
 "frames": [{
@@ -256,7 +256,7 @@ animations = [{
 "texture": ExtResource("56")
 }],
 "loop": false,
-"name": &"attack-2-down",
+"name": &"attack_2_down",
 "speed": 15.0
 }, {
 "frames": [{
@@ -273,7 +273,7 @@ animations = [{
 "texture": ExtResource("72")
 }],
 "loop": false,
-"name": &"attack-2-right",
+"name": &"attack_2_right",
 "speed": 15.0
 }, {
 "frames": [{
@@ -290,7 +290,7 @@ animations = [{
 "texture": ExtResource("79")
 }],
 "loop": false,
-"name": &"attack-2-up",
+"name": &"attack_2_up",
 "speed": 15.0
 }, {
 "frames": [{
@@ -307,7 +307,7 @@ animations = [{
 "texture": ExtResource("89")
 }],
 "loop": false,
-"name": &"attack-3-right",
+"name": &"attack_3_right",
 "speed": 15.0
 }, {
 "frames": [{
@@ -336,7 +336,7 @@ animations = [{
 "texture": ExtResource("1")
 }],
 "loop": true,
-"name": &"cutscene-stand-down",
+"name": &"cutscene_stand_down",
 "speed": 4.0
 }, {
 "frames": [{
@@ -365,7 +365,7 @@ animations = [{
 "texture": ExtResource("6")
 }],
 "loop": true,
-"name": &"cutscene-stand-right",
+"name": &"cutscene_stand_right",
 "speed": 4.0
 }, {
 "frames": [{
@@ -373,7 +373,7 @@ animations = [{
 "texture": ExtResource("12")
 }],
 "loop": false,
-"name": &"cutscene-stand-up",
+"name": &"cutscene_stand_up",
 "speed": 1.0
 }, {
 "frames": [{
@@ -395,30 +395,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("115")
-}],
-"loop": false,
-"name": &"defense-down",
-"speed": 1.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("116")
-}],
-"loop": false,
-"name": &"defense-right",
-"speed": 1.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("117")
-}],
-"loop": false,
-"name": &"defense-up",
-"speed": 1.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": ExtResource("165")
 }, {
 "duration": 1.0,
@@ -431,7 +407,7 @@ animations = [{
 "texture": ExtResource("168")
 }],
 "loop": false,
-"name": &"enter-map-down",
+"name": &"enter_map_down",
 "speed": 8.0
 }, {
 "frames": [{
@@ -448,7 +424,7 @@ animations = [{
 "texture": ExtResource("170")
 }],
 "loop": false,
-"name": &"enter-map-right",
+"name": &"enter_map_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -465,7 +441,7 @@ animations = [{
 "texture": ExtResource("171")
 }],
 "loop": false,
-"name": &"enter-map-up",
+"name": &"enter_map_up",
 "speed": 5.0
 }, {
 "frames": [{
@@ -479,7 +455,7 @@ animations = [{
 "texture": ExtResource("87")
 }],
 "loop": true,
-"name": &"fly-cn2",
+"name": &"fly_cn2",
 "speed": 5.0
 }, {
 "frames": [{
@@ -493,7 +469,7 @@ animations = [{
 "texture": ExtResource("95")
 }],
 "loop": true,
-"name": &"fly-cn4",
+"name": &"fly_cn4",
 "speed": 5.0
 }, {
 "frames": [{
@@ -507,7 +483,7 @@ animations = [{
 "texture": ExtResource("99")
 }],
 "loop": true,
-"name": &"fly-down",
+"name": &"fly_down",
 "speed": 5.0
 }, {
 "frames": [{
@@ -521,7 +497,7 @@ animations = [{
 "texture": ExtResource("92")
 }],
 "loop": true,
-"name": &"fly-up",
+"name": &"fly_up",
 "speed": 5.0
 }, {
 "frames": [{
@@ -534,6 +510,30 @@ animations = [{
 "loop": false,
 "name": &"grab",
 "speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("115")
+}],
+"loop": false,
+"name": &"guard_down",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("116")
+}],
+"loop": false,
+"name": &"guard_right",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("117")
+}],
+"loop": false,
+"name": &"guard_up",
+"speed": 1.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -590,7 +590,7 @@ animations = [{
 "texture": ExtResource("21")
 }],
 "loop": false,
-"name": &"hit-down",
+"name": &"hit_down",
 "speed": 13.0
 }, {
 "frames": [{
@@ -619,7 +619,7 @@ animations = [{
 "texture": ExtResource("11")
 }],
 "loop": false,
-"name": &"hit-right",
+"name": &"hit_right",
 "speed": 13.0
 }, {
 "frames": [{
@@ -648,7 +648,7 @@ animations = [{
 "texture": ExtResource("12")
 }],
 "loop": false,
-"name": &"hit-up",
+"name": &"hit_up",
 "speed": 13.0
 }, {
 "frames": [{
@@ -665,7 +665,7 @@ animations = [{
 "texture": ExtResource("130")
 }],
 "loop": false,
-"name": &"hit-wall-down",
+"name": &"hit_wall_down",
 "speed": 7.0
 }, {
 "frames": [{
@@ -682,7 +682,7 @@ animations = [{
 "texture": ExtResource("122")
 }],
 "loop": false,
-"name": &"hit-wall-right",
+"name": &"hit_wall_right",
 "speed": 7.0
 }, {
 "frames": [{
@@ -699,8 +699,80 @@ animations = [{
 "texture": ExtResource("127")
 }],
 "loop": false,
-"name": &"hit-wall-up",
+"name": &"hit_wall_up",
 "speed": 7.0
+}, {
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 7.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 7.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 7.0,
+"texture": ExtResource("21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 4.0,
+"texture": ExtResource("21")
+}],
+"loop": false,
+"name": &"idle_down",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 7.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 7.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 7.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 7.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 4.0,
+"texture": ExtResource("11")
+}],
+"loop": false,
+"name": &"idle_right",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 36.0,
+"texture": ExtResource("12")
+}],
+"loop": false,
+"name": &"idle_up",
+"speed": 4.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -710,7 +782,7 @@ animations = [{
 "texture": ExtResource("44")
 }],
 "loop": true,
-"name": &"kame-2-down",
+"name": &"kame_2_down",
 "speed": 5.0
 }, {
 "frames": [{
@@ -721,7 +793,7 @@ animations = [{
 "texture": ExtResource("55")
 }],
 "loop": true,
-"name": &"kame-2-down-right",
+"name": &"kame_2_down_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -732,7 +804,7 @@ animations = [{
 "texture": ExtResource("62")
 }],
 "loop": true,
-"name": &"kame-2-left-down",
+"name": &"kame_2_left_down",
 "speed": 5.0
 }, {
 "frames": [{
@@ -743,7 +815,7 @@ animations = [{
 "texture": ExtResource("81")
 }],
 "loop": true,
-"name": &"kame-2-left-up",
+"name": &"kame_2_left_up",
 "speed": 5.0
 }, {
 "frames": [{
@@ -754,7 +826,7 @@ animations = [{
 "texture": ExtResource("43")
 }],
 "loop": true,
-"name": &"kame-2-right",
+"name": &"kame_2_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -765,7 +837,7 @@ animations = [{
 "texture": ExtResource("63")
 }],
 "loop": true,
-"name": &"kame-2-right-down",
+"name": &"kame_2_right_down",
 "speed": 5.0
 }, {
 "frames": [{
@@ -776,7 +848,7 @@ animations = [{
 "texture": ExtResource("78")
 }],
 "loop": true,
-"name": &"kame-2-right-up",
+"name": &"kame_2_right_up",
 "speed": 5.0
 }, {
 "frames": [{
@@ -787,7 +859,7 @@ animations = [{
 "texture": ExtResource("49")
 }],
 "loop": true,
-"name": &"kame-2-up",
+"name": &"kame_2_up",
 "speed": 5.0
 }, {
 "frames": [{
@@ -798,7 +870,7 @@ animations = [{
 "texture": ExtResource("74")
 }],
 "loop": true,
-"name": &"kame-2-up-right",
+"name": &"kame_2_up_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -836,7 +908,7 @@ animations = [{
 "texture": ExtResource("135")
 }],
 "loop": false,
-"name": &"kame-down",
+"name": &"kame_down",
 "speed": 20.0
 }, {
 "frames": [{
@@ -874,7 +946,7 @@ animations = [{
 "texture": ExtResource("133")
 }],
 "loop": false,
-"name": &"kame-right",
+"name": &"kame_right",
 "speed": 20.0
 }, {
 "frames": [{
@@ -912,7 +984,7 @@ animations = [{
 "texture": ExtResource("137")
 }],
 "loop": false,
-"name": &"kame-up",
+"name": &"kame_up",
 "speed": 20.0
 }, {
 "frames": [{
@@ -923,7 +995,7 @@ animations = [{
 "texture": ExtResource("37")
 }],
 "loop": false,
-"name": &"ki-blast-1-down",
+"name": &"ki_blast_1_down",
 "speed": 10.0
 }, {
 "frames": [{
@@ -934,7 +1006,7 @@ animations = [{
 "texture": ExtResource("39")
 }],
 "loop": false,
-"name": &"ki-blast-1-right",
+"name": &"ki_blast_1_right",
 "speed": 10.0
 }, {
 "frames": [{
@@ -945,7 +1017,7 @@ animations = [{
 "texture": ExtResource("40")
 }],
 "loop": false,
-"name": &"ki-blast-1-up",
+"name": &"ki_blast_1_up",
 "speed": 10.0
 }, {
 "frames": [{
@@ -953,7 +1025,7 @@ animations = [{
 "texture": ExtResource("47")
 }],
 "loop": false,
-"name": &"ki-blast-2-down",
+"name": &"ki_blast_2_down",
 "speed": 5.0
 }, {
 "frames": [{
@@ -961,7 +1033,7 @@ animations = [{
 "texture": ExtResource("41")
 }],
 "loop": false,
-"name": &"ki-blast-2-right",
+"name": &"ki_blast_2_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -969,7 +1041,7 @@ animations = [{
 "texture": ExtResource("45")
 }],
 "loop": false,
-"name": &"ki-blast-2-up",
+"name": &"ki_blast_2_up",
 "speed": 5.0
 }, {
 "frames": [{
@@ -977,7 +1049,7 @@ animations = [{
 "texture": ExtResource("37")
 }],
 "loop": false,
-"name": &"ki-blast-3-down",
+"name": &"ki_blast_3_down",
 "speed": 5.0
 }, {
 "frames": [{
@@ -985,7 +1057,7 @@ animations = [{
 "texture": ExtResource("39")
 }],
 "loop": false,
-"name": &"ki-blast-3-right",
+"name": &"ki_blast_3_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -993,7 +1065,7 @@ animations = [{
 "texture": ExtResource("40")
 }],
 "loop": false,
-"name": &"ki-blast-3-up",
+"name": &"ki_blast_3_up",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1010,7 +1082,7 @@ animations = [{
 "texture": ExtResource("164")
 }],
 "loop": false,
-"name": &"level-up",
+"name": &"level_up",
 "speed": 4.0
 }, {
 "frames": [{
@@ -1027,7 +1099,7 @@ animations = [{
 "texture": ExtResource("23")
 }],
 "loop": true,
-"name": &"run-down",
+"name": &"run_down",
 "speed": 7.5
 }, {
 "frames": [{
@@ -1044,7 +1116,7 @@ animations = [{
 "texture": ExtResource("29")
 }],
 "loop": true,
-"name": &"run-right",
+"name": &"run_right",
 "speed": 7.5
 }, {
 "frames": [{
@@ -1061,7 +1133,7 @@ animations = [{
 "texture": ExtResource("33")
 }],
 "loop": true,
-"name": &"run-up",
+"name": &"run_up",
 "speed": 7.5
 }, {
 "frames": [{
@@ -1075,7 +1147,7 @@ animations = [{
 "texture": ExtResource("155")
 }],
 "loop": false,
-"name": &"short-teleport-down",
+"name": &"short_teleport_down",
 "speed": 10.0
 }, {
 "frames": [{
@@ -1089,7 +1161,7 @@ animations = [{
 "texture": ExtResource("160")
 }],
 "loop": false,
-"name": &"short-teleport-right",
+"name": &"short_teleport_right",
 "speed": 10.0
 }, {
 "frames": [{
@@ -1103,80 +1175,8 @@ animations = [{
 "texture": ExtResource("154")
 }],
 "loop": false,
-"name": &"short-teleport-up",
+"name": &"short_teleport_up",
 "speed": 10.0
-}, {
-"frames": [{
-"duration": 7.0,
-"texture": ExtResource("21")
-}, {
-"duration": 1.0,
-"texture": ExtResource("1")
-}, {
-"duration": 7.0,
-"texture": ExtResource("21")
-}, {
-"duration": 1.0,
-"texture": ExtResource("1")
-}, {
-"duration": 7.0,
-"texture": ExtResource("21")
-}, {
-"duration": 1.0,
-"texture": ExtResource("1")
-}, {
-"duration": 7.0,
-"texture": ExtResource("21")
-}, {
-"duration": 1.0,
-"texture": ExtResource("1")
-}, {
-"duration": 4.0,
-"texture": ExtResource("21")
-}],
-"loop": false,
-"name": &"stand-down",
-"speed": 4.0
-}, {
-"frames": [{
-"duration": 7.0,
-"texture": ExtResource("11")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6")
-}, {
-"duration": 7.0,
-"texture": ExtResource("11")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6")
-}, {
-"duration": 7.0,
-"texture": ExtResource("11")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6")
-}, {
-"duration": 7.0,
-"texture": ExtResource("11")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6")
-}, {
-"duration": 4.0,
-"texture": ExtResource("11")
-}],
-"loop": false,
-"name": &"stand-right",
-"speed": 4.0
-}, {
-"frames": [{
-"duration": 36.0,
-"texture": ExtResource("12")
-}],
-"loop": false,
-"name": &"stand-up",
-"speed": 4.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1192,7 +1192,7 @@ animations = [{
 "texture": ExtResource("164")
 }],
 "loop": false,
-"name": &"suprise-down",
+"name": &"suprise_down",
 "speed": 4.0
 }, {
 "frames": [{
@@ -1209,7 +1209,7 @@ animations = [{
 "texture": ExtResource("9")
 }],
 "loop": true,
-"name": &"walk-down",
+"name": &"walk_down",
 "speed": 7.5
 }, {
 "frames": [{
@@ -1226,7 +1226,7 @@ animations = [{
 "texture": ExtResource("2")
 }],
 "loop": true,
-"name": &"walk-right",
+"name": &"walk_right",
 "speed": 7.5
 }, {
 "frames": [{
@@ -1243,11 +1243,12 @@ animations = [{
 "texture": ExtResource("8")
 }],
 "loop": true,
-"name": &"walk-up",
+"name": &"walk_up",
 "speed": 7.5
 }]
 
 [node name="Sprite" type="AnimatedSprite2D" unique_id=575679977]
+process_mode = 3
 sprite_frames = SubResource("1")
-animation = &"stand-down"
+animation = &"idle_down"
 offset = Vector2(0, -16)

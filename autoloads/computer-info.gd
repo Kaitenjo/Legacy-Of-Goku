@@ -1,4 +1,4 @@
-extends Node2D
+extends Node
 
 var NPC_DATA := {
 	'Chichi/Classic': ScouterStats.new(0, 0, 0, 0),

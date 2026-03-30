@@ -1,0 +1,95 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://scenes/abilities/kamehameha/kamehameha.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/abilities/kamehameha/Head.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/abilities/kamehameha/Body.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/abilities/kamehameha/Hit2.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/abilities/kamehameha/Hit1.png" type="Texture" id=5]
+[ext_resource path="res://scripts/nodes/attack-area.gd" type="Script" id=6]
+[ext_resource path="res://assets/sprites/abilities/kamehameha/Tail.png" type="Texture" id=7]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Default",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Hit",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6, 6 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 0.5, 5 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 6, 6 )
+
+[node name="Kamehameha" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Body" type="KinematicBody2D" parent="."]
+collision_layer = 2147483653
+collision_mask = 0
+collision/safe_margin = 0.001
+
+[node name="Head" type="AnimatedSprite" parent="Body"]
+frames = SubResource( 4 )
+animation = "Default"
+flip_h = true
+
+[node name="HeadArea" type="Area2D" parent="Body" groups=["Head"]]
+position = Vector2( 0.5, 0 )
+collision_layer = 0
+collision_mask = 32
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Body/HeadArea"]
+shape = SubResource( 1 )
+
+[node name="Body" type="Sprite" parent="Body"]
+position = Vector2( 8, 0 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -0.5, -3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 1, 6 )
+
+[node name="BodyArea" type="Area2D" parent="Body"]
+position = Vector2( 8, 0 )
+collision_layer = 0
+collision_mask = 32
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Body/BodyArea"]
+shape = SubResource( 2 )
+
+[node name="Collision" type="CollisionShape2D" parent="Body"]
+position = Vector2( 0.5, 0 )
+shape = SubResource( 5 )
+
+[node name="Struggle" type="Area2D" parent="Body"]
+collision_layer = 64
+collision_mask = 64
+
+[node name="Collision" type="CollisionShape2D" parent="Body/Struggle"]
+position = Vector2( 0.5, 0 )
+shape = SubResource( 5 )
+
+[node name="CooldownExplosion" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="Tail" type="Sprite" parent="."]
+position = Vector2( 12.5, 0 )
+texture = ExtResource( 7 )
+flip_h = true
+
+[connection signal="area_entered" from="Body/HeadArea" to="." method="_on_HeadArea_area_entered"]
+[connection signal="area_exited" from="Body/HeadArea" to="." method="_on_HeadArea_area_exited"]
+[connection signal="timeout" from="CooldownExplosion" to="." method="_on_CooldownExplosion_timeout"]

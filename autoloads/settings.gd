@@ -5,14 +5,14 @@ var text_speed: float
 var zoom_camera: Vector2
 var ux: bool
 
-var DEFAULT_SETTINGS := SettingsDTO.new(4, 4, 4, 8, false, 1)
+var DEFAULT_SETTINGS := SettingsData.new(4, 4, 4, 8, false, 1)
 
 func _ready() -> void:
 	Events.connect('zoom_camera_value_changed', update_zoom_camera)
 	Events.connect('text_speed_value_changed', update_text_speed)
 	resolution = DisplayServer.window_get_size() / Vector2i(1360, 768)
-	if not FileManager.settings_file_exists(): FileManager.create_settings_file(DEFAULT_SETTINGS)
-	var new_settings := FileManager.load_settings_file()
+	if not FilesSystemManager.settings_file_exists():  FilesSystemManager.create_settings_file(DEFAULT_SETTINGS)
+	var new_settings := FilesSystemManager.load_settings_file()
 	update_text_speed(new_settings.text_speed)
 	update_zoom_camera(new_settings.zoom_camera)
 	update_ux(new_settings.ux)

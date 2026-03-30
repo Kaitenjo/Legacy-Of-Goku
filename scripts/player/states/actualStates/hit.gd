@@ -1,16 +1,16 @@
 extends PlayerBaseState
 
-const INCREASE: int = 25
-var vector_direction: Vector2 = Vector2.ZERO
+var vector_direction := Vector2.ZERO
+const VELOCITY := 25
 
 func _ready():
-	animation = 'Hit'
+	self.animation = 'hit'
 	
 func physics_process(delta: float) -> int:
-	if not player.stats.health:
+	if not self.player.stats.health:
 		return State.Dead
 			
-	player.move_and_slide(vector_direction * INCREASE)
+	self.move_and_slide(vector_direction)
 	
 	if completed:
 		if get_input_vector():
@@ -21,22 +21,24 @@ func physics_process(delta: float) -> int:
 	return State.Null
 	
 func enter() -> void:
-	var position: Vector2 = player.hit_area.global_position
+	var hit_area := self.player.hit_area
+	var player_position = self.player.position
 	
-	var new_direction = Direction.get_opposite_direction(player.hit_area.direction)
+	var position := hit_area.global_position
+	var new_direction = Direction.get_opposite_direction(hit_area.direction)
 
-	if abs(player.position.y - position.y) >= abs(player.position.x - position.x):
-		player.direction = Direction.Directions.UP if player.position.y >= position.y else Direction.Directions.DOWN
+	if abs(player_position.y - position.y) >= abs(player_position.x - position.x):
+		self.player.direction = Direction.Directions.UP if player_position.y >= position.y else Direction.Directions.DOWN
 	else:
-		player.direction = Direction.Directions.LEFT if player.position.x >= position.x else Direction.Directions.RIGHT
+		self.player.direction = Direction.Directions.LEFT if player_position.x >= position.x else Direction.Directions.RIGHT
 	
 	#diagonal not handled
-	vector_direction = Direction.get_opposite_vector(player.direction)
+	self.vector_direction = Direction.get_opposite_vector(self.player.direction) * self.VELOCITY
 	AudioManager.play_combact_sound('Hit' + str(Utility.random_int(1, 3)))
-	if await player.wait(0.5): return
+	if await self.player.wait(0.5): return
 	completed = true
 
 func reset_state() -> void:
-	vector_direction = Vector2.ZERO
-	player.hit = false
+	self.vector_direction = Vector2.ZERO
+	self.player.hit = false
 	Events.emit_signal('enable_actual_entity')
